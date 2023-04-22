@@ -79,8 +79,201 @@ const frontage_wood = {
     nm3b: 4513
 }
 
-const user_selected_opcions = []
+let user_selected_opcions = {}
 
 /* funcion para tomar el nombre de la persona*/
+user_name_button.addEventListener("click", () => {
+    const user_name = document.getElementById("user_name").value
+    user_selected_opcions = { ...user_selected_opcions, user_name }
+    renderTypeofHouse()
+})
 
-const user_name = document.getElementById("user_name").value
+const renderTypeofHouse = () => {
+    budgetContainer.innerHTML = `
+        <h2>¿Qué tipo de casa desea?</h2>
+        <div id="typeNorden"><p>Norden</p></div>
+        <div id="typePampa"><p>Pampa</p></div>
+    `
+    const typeNorden = document.getElementById("typeNorden")
+    const typePampa = document.getElementById("typePampa")
+
+    typeNorden.addEventListener("click", () => {
+        user_selected_opcions = { ...user_selected_opcions, typeofHouse: "Norden" }
+        renderTypeofNorden()
+    })
+    typePampa.addEventListener("click", () => {
+        user_selected_opcions = { ...user_selected_opcions, typeofHouse: "Pampa" }
+        renderTypeofPampa()
+    })
+}
+/* Norden */
+const renderTypeofNorden = () => {
+    budgetContainer.innerHTML = `
+        <h2>¿Qué modelo de casa desea?</h2>
+        <div id="nm1"><p>Modelo 1</p></div>
+        <div id="nm2"><p>Modelo 2</p></div>
+        <div id="nm3"><p>Modelo 3</p></div>
+    `
+    const nm1 = document.getElementById("nm1")
+    const nm2 = document.getElementById("nm2")
+    const nm3 = document.getElementById("nm3")
+    nm1.addEventListener("click", () => {
+        user_selected_opcions = { ...user_selected_opcions, houseModel: "nm1" }
+        renderVariantOfnm1()
+    })
+    nm2.addEventListener("click", () => {
+        user_selected_opcions = { ...user_selected_opcions, houseModel: "nm2" }
+        renderVariantOfnm2()
+    })
+    nm3.addEventListener("click", () => {
+        user_selected_opcions = { ...user_selected_opcions, houseModel: "nm3" }
+        renderVariantOfnm3()
+    })
+}
+
+/* Norden Modelo 1 */
+const renderVariantOfnm1 = () => {
+    budgetContainer.innerHTML = `
+        <h2>¿Qué variante desea?</h2>
+        <div id="nm1a"><p>Modelo 1A</p></div>
+        <div id="nm1b"><p>Modelo 1B</p></div>
+        <div id="nm1c"><p>Modelo 1C</p></div>
+        <div id="nm1d"><p>Modelo 1D</p></div>
+    `
+    const nm1a = document.getElementById("nm1a")
+    const nm1b = document.getElementById("nm1b")
+    const nm1c = document.getElementById("nm1c")
+    const nm1d = document.getElementById("nm1d")
+    nm1a.addEventListener("click", () => {
+        user_selected_opcions = {...user_selected_opcions, houseVariant: "nm1a"}
+        renderHouseFacade()
+    })
+    nm1b.addEventListener("click", () => {
+        user_selected_opcions = {...user_selected_opcions, houseVariant: "nm1b"}
+        renderHouseFacade()
+    })
+    nm1c.addEventListener("click", () => {
+        user_selected_opcions = {...user_selected_opcions, houseVariant: "nm1c"}
+        renderHouseFacade()
+    })
+    nm1d.addEventListener("click", () => {
+        user_selected_opcions = {...user_selected_opcions, houseVariant: "nm1d"}
+        renderHouseFacade()
+    })
+}
+/* Norden Modelo 2 */
+const renderVariantOfnm2 = () => {
+    budgetContainer.innerHTML = `
+        <h2>¿Qué variante desea?</h2>
+        <div id="nm2a"><p>Modelo 2A</p></div>
+        <div id="nm2b"><p>Modelo 2B</p></div>
+    `
+    const nm2a = document.getElementById("nm2a")
+    const nm2b = document.getElementById("nm2b")
+    nm2a.addEventListener("click", () => {
+        user_selected_opcions = {...user_selected_opcions, houseVariant: "nm2a"}
+        renderHouseFacade()
+    })
+    nm2b.addEventListener("click", () => {
+        user_selected_opcions = {...user_selected_opcions, houseVariant: "nm2b"}
+        renderHouseFacade()
+    })
+}
+/* Norden Modelo 3 */
+const renderVariantOfnm3 = () => {
+    budgetContainer.innerHTML = `
+        <h2>¿Qué variante desea?</h2>
+        <div id="nm3a"><p>Modelo 3A</p></div>
+        <div id="nm3b"><p>Modelo 3B</p></div>
+    `
+    const nm3a = document.getElementById("nm3a")
+    const nm3b = document.getElementById("nm3b")
+    nm3a.addEventListener("click", () => {
+        user_selected_opcions = {...user_selected_opcions, houseVariant: "nm3a"}
+        renderHouseFacade()
+    })
+    nm3b.addEventListener("click", () => {
+        user_selected_opcions = {...user_selected_opcions, houseVariant: "nm3b"}
+        renderHouseFacade()
+    })
+}
+
+/* pampa */
+const renderTypeofPampa = () => {
+    budgetContainer.innerHTML = `
+        <h2>¿Qué modelo de casa desea?</h2>
+        <div id="nm1"><p>Modelo 1</p></div>
+        <div id="nm2"><p>Modelo 2</p></div>
+        <div id="nm3"><p>Modelo 3</p></div>
+    `
+    const pm1 = document.getElementById("pm1")
+    const pm2 = document.getElementById("pm2")
+    const pm3 = document.getElementById("pm3")
+    pm1.addEventListener("click", () => {
+        user_selected_opcions = { ...user_selected_opcions, modelHouse: "pm1" }
+        renderVariantOfpm1()
+    })
+    pm2.addEventListener("click", () => {
+        user_selected_opcions = { ...user_selected_opcions, modelHouse: "pm2" }
+        renderVariantOfpm2()
+    })
+    pm3.addEventListener("click", () => {
+        user_selected_opcions = { ...user_selected_opcions, modelHouse: "pm3" }
+        renderVariantOfpm3()
+    })
+}
+
+/* Pampa Modelo 1 */
+const renderVariantOfpm1 = () => {
+    budgetContainer.innerHTML = `
+        <h2>¿Qué variante desea?</h2>
+        <div id="pm1a"><p>Modelo 1A</p></div>
+        <div id="pm1b"><p>Modelo 1B</p></div>
+        <div id="pm1c"><p>Modelo 1C</p></div>
+        <div id="pm1d"><p>Modelo 1D</p></div>
+    `
+    const pm1a = document.getElementById("pm1a")
+    const pm1b = document.getElementById("pm1b")
+    const pm1c = document.getElementById("pm1c")
+    const pm1d = document.getElementById("pm1d")
+    pm1a.addEventListener("click", () => {
+        user_selected_opcions = {...user_selected_opcions, houseVariant: "pm1a"}
+        renderHouseFacade()
+    })
+    pm1b.addEventListener("click", () => {
+        user_selected_opcions = {...user_selected_opcions, houseVariant: "pm1b"}
+        renderHouseFacade()
+    })
+    pm1c.addEventListener("click", () => {
+        user_selected_opcions = {...user_selected_opcions, houseVariant: "pm1c"}
+        renderHouseFacade()
+    })
+    pm1d.addEventListener("click", () => {
+        user_selected_opcions = {...user_selected_opcions, houseVariant: "pm1d"}
+        renderHouseFacade()
+    })
+}
+/* Pampa Modelo 2 */
+const renderVariantOfpm2 = () => {
+    budgetContainer.innerHTML = `
+        <h2>¿Qué variante desea?</h2>
+        <div id="pm2a"><p>Modelo 2A</p></div>
+        <div id="pm2b"><p>Modelo 2B</p></div>
+        <div id="pm2c"><p>Modelo 2C</p></div>
+    `
+    const pm2a = document.getElementById("pm2a")
+    const pm2b = document.getElementById("pm2b")
+    const pm2c = document.getElementById("pm2c")
+    pm2a.addEventListener("click", () => {
+        user_selected_opcions = {...user_selected_opcions, houseVariant: "pm2a"}
+        renderHouseFacade()
+    })
+    pm2b.addEventListener("click", () => {
+        user_selected_opcions = {...user_selected_opcions, houseVariant: "pm2b"}
+        renderHouseFacade()
+    })
+    pm2c.addEventListener("click", () => {
+        user_selected_opcions = {...user_selected_opcions, houseVariant: "pm2c"}
+        renderHouseFacade()
+    })
+}
