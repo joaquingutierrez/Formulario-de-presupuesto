@@ -59,7 +59,7 @@ const ceiling_wood = {
     nm3a: 749,
     nm3b: 998
 }
-const frontage_wood = {
+const facade_wood = {
     pm1a: 2157,
     pm1b: 2157,
     pm1c: 2157,
@@ -306,14 +306,17 @@ const renderHouseFacade = () => {
         const wood = document.getElementById("wood")
         chapaBlanca.addEventListener("click", () => {
             user_selected_opcions.houseFacade = "Chapa Blanca"
+            user_selected_opcions.subTotal[1] = 0
             renderHouseFacadeConfirmation()
         })
         chapaNegra.addEventListener("click", () => {
             user_selected_opcions.houseFacade = "Chapa Negra"
+            user_selected_opcions.subTotal[1] = 0
             renderHouseFacadeConfirmation()
         })
         wood.addEventListener("click", () => {
             user_selected_opcions.houseFacade = "Madera"
+            user_selected_opcions.subTotal[1] = facade_wood.houseVariant
             renderHouseFacadeConfirmation()
         })
     } else if (houseVariant === "nm2a" || houseVariant === "nm2b" || houseVariant === "nm3a" || houseVariant === "nm3b") {
@@ -330,18 +333,22 @@ const renderHouseFacade = () => {
         const chapaNegraYMadera = document.getElementById("chapaNegraYMadera")
         chapaBlanca.addEventListener("click", () => {
             user_selected_opcions.houseFacade = "Chapa Blanca"
+            user_selected_opcions.subTotal[1] = 0
             renderHouseFacadeConfirmation()
         })
         chapaNegra.addEventListener("click", () => {
             user_selected_opcions.houseFacade = "Chapa Negra"
+            user_selected_opcions.subTotal[1] = 0
             renderHouseFacadeConfirmation()
         })
         chapaBlancaYMadera.addEventListener("click", () => {
             user_selected_opcions.houseFacade = "Chapa Blanca y Madera"
+            user_selected_opcions.subTotal[1] = facade_wood.houseVariant
             renderHouseFacadeConfirmation()
         })
         chapaNegraYMadera.addEventListener("click", () => {
             user_selected_opcions.houseFacade = "Chapa Negra y Madera"
+            user_selected_opcions.subTotal[1] = facade_wood.houseVariant
             renderHouseFacadeConfirmation()
         })
     } else if (houseVariant === "pm2a" || houseVariant === "pm2b") {
@@ -354,10 +361,12 @@ const renderHouseFacade = () => {
         const chapaNegra = document.getElementById("chapaNegra")
         chapaBlanca.addEventListener("click", () => {
             user_selected_opcions.houseFacade = "Chapa Blanca"
+            user_selected_opcions.subTotal[1] = 0
             renderHouseFacadeConfirmation()
         })
         chapaNegra.addEventListener("click", () => {
             user_selected_opcions.houseFacade = "Chapa Negra"
+            user_selected_opcions.subTotal[1] = 0
             renderHouseFacadeConfirmation()
         })
     } else if (houseVariant === "pm2c" || houseVariant === "pm3a") {
@@ -370,10 +379,12 @@ const renderHouseFacade = () => {
         const chapaNegraYMadera = document.getElementById("chapaNegraYMadera")
         chapaBlancaYMadera.addEventListener("click", () => {
             user_selected_opcions.houseFacade = "Chapa Blanca y Madera"
+            user_selected_opcions.subTotal[1] = facade_wood.houseVariant
             renderHouseFacadeConfirmation()
         })
         chapaNegraYMadera.addEventListener("click", () => {
             user_selected_opcions.houseFacade = "Chapa Negra y Madera"
+            user_selected_opcions.subTotal[1] = facade_wood.houseVariant
             renderHouseFacadeConfirmation()
         })
     }
