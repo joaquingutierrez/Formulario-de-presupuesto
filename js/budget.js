@@ -202,9 +202,9 @@ const renderVariantOfnm3 = () => {
 const renderTypeofPampa = () => {
     budgetContainer.innerHTML = `
         <h2>¿Qué modelo de casa desea?</h2>
-        <div id="nm1"><p>Modelo 1</p></div>
-        <div id="nm2"><p>Modelo 2</p></div>
-        <div id="nm3"><p>Modelo 3</p></div>
+        <div id="pm1"><p>Modelo 1</p></div>
+        <div id="pm2"><p>Modelo 2</p></div>
+        <div id="pm3"><p>Modelo 3</p></div>
     `
     const pm1 = document.getElementById("pm1")
     const pm2 = document.getElementById("pm2")
