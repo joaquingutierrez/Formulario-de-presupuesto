@@ -1,9 +1,10 @@
 body {
-    background-color: #fff;
+    background-color: #23282d;
     font-family: "Montserrat", sans-serif;
     margin: 0 30px;
     padding: 0;
     height: 100vh;
+    color: #fff;
 }
 
 #budgetContainer {
@@ -28,6 +29,11 @@ h2 {
     border: none;
     border-bottom: 1px solid #C82514;
     width: 80%;
+    background-color: #23282d;
+}
+.inputName input:focus-visible {
+    outline: 0;
+    color: #fff;
 }
 .inputName button {
     width: fit-content;
@@ -44,6 +50,14 @@ h2 {
 
 .frontImg {
     width: 60%;
+    border-radius: 10px;
+}
+
+.question {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .choiceContainer {

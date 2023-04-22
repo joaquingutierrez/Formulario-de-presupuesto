@@ -90,11 +90,13 @@ user_name_button.addEventListener("click", () => {
 
 const renderTypeofHouse = () => {
     budgetContainer.innerHTML = `
-        <h2>¿Qué tipo de casa desea?</h2>
-        <div class="choiceContainer">
-        <div id="typeNorden"><img src="./img/facade/nm3a_chapa_negra_madera.jpg"><p>Norden</p></div>
-        <div id="typePampa"><img src="./img/facade/pm3a_chapa_negra_madera.jpg"><p>Pampa</p></div>
-        </div>
+    <div class="question">
+    <h2>¿Qué tipo de casa desea?</h2>
+    <div class="choiceContainer">
+    <div id="typeNorden"><img src="./img/facade/nm3a_chapa_negra_madera.jpg"><p>Norden</p></div>
+    <div id="typePampa"><img src="./img/facade/pm3a_chapa_negra_madera.jpg"><p>Pampa</p></div>
+    </div>
+    </div>
     `
     const typeNorden = document.getElementById("typeNorden")
     const typePampa = document.getElementById("typePampa")
@@ -111,12 +113,14 @@ const renderTypeofHouse = () => {
 /* Norden */
 const renderTypeofNorden = () => {
     budgetContainer.innerHTML = `
-        <h2>¿Qué modelo de casa desea?</h2>
-        <div class="choiceContainer">
-        <div id="nm1"><img src="./img/facade/nm1a_madera.jpg"><p>Modelo 1</p></div>
-        <div id="nm2"><img src="./img/facade/nm2a_chapa_negra_madera.jpg"><p>Modelo 2</p></div>
-        <div id="nm3"><img src="./img/facade/nm3a_chapa_negra_madera.jpg"><p>Modelo 3</p></div>
-        </div>
+    <div class="question">
+    <h2>¿Qué modelo de casa desea?</h2>
+    <div class="choiceContainer">
+    <div id="nm1"><img src="./img/facade/nm1a_madera.jpg"><p>Modelo 1</p></div>
+    <div id="nm2"><img src="./img/facade/nm2a_chapa_negra_madera.jpg"><p>Modelo 2</p></div>
+    <div id="nm3"><img src="./img/facade/nm3a_chapa_negra_madera.jpg"><p>Modelo 3</p></div>
+    </div>
+    </div>
     `
     const nm1 = document.getElementById("nm1")
     const nm2 = document.getElementById("nm2")
@@ -138,13 +142,15 @@ const renderTypeofNorden = () => {
 /* Norden Modelo 1 */
 const renderVariantOfnm1 = () => {
     budgetContainer.innerHTML = `
-        <h2>¿Qué variante desea?</h2>
-        <div class="choiceContainer">
-        <div id="nm1a"><img src="./img/facade/nm1a_madera.jpg"><p>Modelo 1A</p></div>
-        <div id="nm1b"><img src="./img/facade/nm1b_madera.jpg"><p>Modelo 1B</p></div>
-        <div id="nm1c"><img src="./img/facade/nm1c_madera.jpg"><p>Modelo 1C</p></div>
-        <div id="nm1d"><img src="./img/facade/nm1d_madera.jpg"><p>Modelo 1D</p></div>
-        </div>
+    <div class="question">
+    <h2>¿Qué variante desea?</h2>
+    <div class="choiceContainer">
+    <div id="nm1a"><img src="./img/facade/nm1a_madera.jpg"><p>Modelo 1A</p></div>
+    <div id="nm1b"><img src="./img/facade/nm1b_madera.jpg"><p>Modelo 1B</p></div>
+    <div id="nm1c"><img src="./img/facade/nm1c_madera.jpg"><p>Modelo 1C</p></div>
+    <div id="nm1d"><img src="./img/facade/nm1d_madera.jpg"><p>Modelo 1D</p></div>
+    </div>
+    </div>
     `
     const nm1a = document.getElementById("nm1a")
     const nm1b = document.getElementById("nm1b")
@@ -170,11 +176,13 @@ const renderVariantOfnm1 = () => {
 /* Norden Modelo 2 */
 const renderVariantOfnm2 = () => {
     budgetContainer.innerHTML = `
-        <h2>¿Qué variante desea?</h2>
-        <div class="choiceContainer">
-        <div id="nm2a"><img src="./img/facade/nm2a_chapa_negra_madera.jpg"><p>Modelo 2A</p></div>
-        <div id="nm2b"><img src="./img/facade/nm2b_chapa_negra_madera.jpg"><p>Modelo 2B</p></div>
-        </div>
+    <div class="question">
+    <h2>¿Qué variante desea?</h2>
+    <div class="choiceContainer">
+    <div id="nm2a"><img src="./img/facade/nm2a_chapa_negra_madera.jpg"><p>Modelo 2A</p></div>
+    <div id="nm2b"><img src="./img/facade/nm2b_chapa_negra_madera.jpg"><p>Modelo 2B</p></div>
+    </div>
+    </div>
     `
     const nm2a = document.getElementById("nm2a")
     const nm2b = document.getElementById("nm2b")
@@ -190,11 +198,13 @@ const renderVariantOfnm2 = () => {
 /* Norden Modelo 3 */
 const renderVariantOfnm3 = () => {
     budgetContainer.innerHTML = `
-        <h2>¿Qué variante desea?</h2>
-        <div class="choiceContainer">
-        <div id="nm3a"><img src="./img/facade/nm3a_chapa_negra_madera.jpg"><p>Modelo 3A</p></div>
-        <div id="nm3b"><img src="./img/facade/nm3b_chapa_negra_madera.jpg"><p>Modelo 3B</p></div>
-        </div>
+    <div class="question">
+    <h2>¿Qué variante desea?</h2>
+    <div class="choiceContainer">
+    <div id="nm3a"><img src="./img/facade/nm3a_chapa_negra_madera.jpg"><p>Modelo 3A</p></div>
+    <div id="nm3b"><img src="./img/facade/nm3b_chapa_negra_madera.jpg"><p>Modelo 3B</p></div>
+    </div>
+    </div>
     `
     const nm3a = document.getElementById("nm3a")
     const nm3b = document.getElementById("nm3b")
@@ -211,12 +221,14 @@ const renderVariantOfnm3 = () => {
 /* pampa */
 const renderTypeofPampa = () => {
     budgetContainer.innerHTML = `
-        <h2>¿Qué modelo de casa desea?</h2>
-        <div class="choiceContainer">
-        <div id="pm1"><img src="./img/facade/pm1a_madera.jpg"><p>Modelo 1</p></div>
-        <div id="pm2"><img src="./img/facade/pm2c_chapa_negra_madera.jpg"><p>Modelo 2</p></div>
-        <div id="pm3"><img src="./img/facade/pm3a_chapa_negra_madera.jpg"><p>Modelo 3</p></div>
-        </div>
+    <div class="question">
+    <h2>¿Qué modelo de casa desea?</h2>
+    <div class="choiceContainer">
+    <div id="pm1"><img src="./img/facade/pm1a_madera.jpg"><p>Modelo 1</p></div>
+    <div id="pm2"><img src="./img/facade/pm2c_chapa_negra_madera.jpg"><p>Modelo 2</p></div>
+    <div id="pm3"><img src="./img/facade/pm3a_chapa_negra_madera.jpg"><p>Modelo 3</p></div>
+    </div>
+    </div>
     `
     const pm1 = document.getElementById("pm1")
     const pm2 = document.getElementById("pm2")
@@ -238,13 +250,15 @@ const renderTypeofPampa = () => {
 /* Pampa Modelo 1 */
 const renderVariantOfpm1 = () => {
     budgetContainer.innerHTML = `
-        <h2>¿Qué variante desea?</h2>
-        <div class="choiceContainer">
-        <div id="pm1a"><img src="./img/facade/pm1a_madera.jpg"><p>Modelo 1A</p></div>
-        <div id="pm1b"><img src="./img/facade/pm1b_madera.jpg"><p>Modelo 1B</p></div>
-        <div id="pm1c"><img src="./img/facade/pm1c_madera.jpg"><p>Modelo 1C</p></div>
-        <div id="pm1d"><img src="./img/facade/pm1d_madera.jpg"><p>Modelo 1D</p></div>
-        </div>
+    <div class="question">
+    <h2>¿Qué variante desea?</h2>
+    <div class="choiceContainer">
+    <div id="pm1a"><img src="./img/facade/pm1a_madera.jpg"><p>Modelo 1A</p></div>
+    <div id="pm1b"><img src="./img/facade/pm1b_madera.jpg"><p>Modelo 1B</p></div>
+    <div id="pm1c"><img src="./img/facade/pm1c_madera.jpg"><p>Modelo 1C</p></div>
+    <div id="pm1d"><img src="./img/facade/pm1d_madera.jpg"><p>Modelo 1D</p></div>
+    </div>
+    </div>
     `
     const pm1a = document.getElementById("pm1a")
     const pm1b = document.getElementById("pm1b")
@@ -270,12 +284,14 @@ const renderVariantOfpm1 = () => {
 /* Pampa Modelo 2 */
 const renderVariantOfpm2 = () => {
     budgetContainer.innerHTML = `
-        <h2>¿Qué variante desea?</h2>
-        <div class="choiceContainer">
-        <div id="pm2a"><img src="./img/facade/pm2a_chapa_negra.jpg"><p>Modelo 2A</p></div>
-        <div id="pm2b"><img src="./img/facade/pm2b_chapa_negra.jpg"><p>Modelo 2B</p></div>
-        <div id="pm2c"><img src="./img/facade/pm2c_chapa_negra_madera.jpg"><p>Modelo 2C</p></div>
-        </div>
+    <div class="question">
+    <h2>¿Qué variante desea?</h2>
+    <div class="choiceContainer">
+    <div id="pm2a"><img src="./img/facade/pm2a_chapa_negra.jpg"><p>Modelo 2A</p></div>
+    <div id="pm2b"><img src="./img/facade/pm2b_chapa_negra.jpg"><p>Modelo 2B</p></div>
+    <div id="pm2c"><img src="./img/facade/pm2c_chapa_negra_madera.jpg"><p>Modelo 2C</p></div>
+    </div>
+    </div>
     `
     const pm2a = document.getElementById("pm2a")
     const pm2b = document.getElementById("pm2b")
@@ -296,10 +312,12 @@ const renderVariantOfpm2 = () => {
 /* Pampa Modelo 3 */
 const renderVariantOfpm3 = () => {
     budgetContainer.innerHTML = `
-        <h2>¿Qué variante desea?</h2>
-        <div class="choiceContainer">
-        <div id="pm3a"><img src="./img/facade/pm3a_chapa_negra_madera.jpg"><p>Modelo 3A</p></div>
-        </div>
+    <div class="question">
+    <h2>¿Qué variante desea?</h2>
+    <div class="choiceContainer">
+    <div id="pm3a"><img src="./img/facade/pm3a_chapa_negra_madera.jpg"><p>Modelo 3A</p></div>
+    </div>
+    </div>
     `
     const pm3a = document.getElementById("pm3a")
     pm3a.addEventListener("click", () => {
@@ -313,12 +331,14 @@ const renderHouseFacade = () => {
     const houseVariant = user_selected_opcions.houseVariant
     if (houseVariant === "nm1a" || houseVariant === "nm1b" || houseVariant === "nm1c" || houseVariant === "nm1d" || houseVariant === "pm1a" || houseVariant === "pm1b" || houseVariant === "pm1c" || houseVariant === "pm1d") {
         budgetContainer.innerHTML = `
-            <h2>¿Qué fachada desea?</h2>
-            <div class="choiceContainer">
-            <div id="chapaBlanca"><img src="./img/facade/${houseVariant}_chapa_blanca.jpg"><p>Chapa Blanca</p></div>
-            <div id="chapaNegra"><img src="./img/facade/${houseVariant}_chapa_negra.jpg"><p>Chapa Negra</p></div>
-            <div id="wood"><img src="./img/facade/${houseVariant}_madera.jpg"><p>Madera</p></div>
-            </div>
+        <div class="question">
+        <h2>¿Qué fachada desea?</h2>
+        <div class="choiceContainer">
+        <div id="chapaBlanca"><img src="./img/facade/${houseVariant}_chapa_blanca.jpg"><p>Chapa Blanca</p></div>
+        <div id="chapaNegra"><img src="./img/facade/${houseVariant}_chapa_negra.jpg"><p>Chapa Negra</p></div>
+        <div id="wood"><img src="./img/facade/${houseVariant}_madera.jpg"><p>Madera</p></div>
+        </div>
+        </div>
         `
         const chapaBlanca = document.getElementById("chapaBlanca")
         const chapaNegra = document.getElementById("chapaNegra")
@@ -326,26 +346,28 @@ const renderHouseFacade = () => {
         chapaBlanca.addEventListener("click", () => {
             user_selected_opcions.houseFacade = "Chapa Blanca"
             user_selected_opcions.subTotal[1] = 0
-            renderHouseFacadeConfirmation()
+            renderHouseWall()
         })
         chapaNegra.addEventListener("click", () => {
             user_selected_opcions.houseFacade = "Chapa Negra"
             user_selected_opcions.subTotal[1] = 0
-            renderHouseFacadeConfirmation()
+            renderHouseWall()
         })
         wood.addEventListener("click", () => {
             user_selected_opcions.houseFacade = "Madera"
             user_selected_opcions.subTotal[1] = facade_wood[houseVariant]
-            renderHouseFacadeConfirmation()
+            renderHouseWall()
         })
     } else if (houseVariant === "nm2a" || houseVariant === "nm2b" || houseVariant === "nm3a" || houseVariant === "nm3b") {
         budgetContainer.innerHTML = `
+        <div class="question">
         <h2>¿Qué fachada desea?</h2>
         <div class="choiceContainer">
         <div id="chapaBlanca"><img src="./img/facade/${houseVariant}_chapa_blanca.jpg"><p>Chapa Blanca</p></div>
         <div id="chapaNegra"><img src="./img/facade/${houseVariant}_chapa_negra.jpg"><p>Chapa Negra</p></div>
         <div id="chapaBlancaYMadera"><img src="./img/facade/${houseVariant}_chapa_blanca_madera.jpg"><p>Chapa Blanca y Madera</p></div>
         <div id="chapaNegraYMadera"><img src="./img/facade/${houseVariant}_chapa_negra_madera.jpg"><p>Chapa Negra y Madera</p></div>
+        </div>
         </div>
         `
         const chapaBlanca = document.getElementById("chapaBlanca")
@@ -355,29 +377,31 @@ const renderHouseFacade = () => {
         chapaBlanca.addEventListener("click", () => {
             user_selected_opcions.houseFacade = "Chapa Blanca"
             user_selected_opcions.subTotal[1] = 0
-            renderHouseFacadeConfirmation()
+            renderHouseWall()
         })
         chapaNegra.addEventListener("click", () => {
             user_selected_opcions.houseFacade = "Chapa Negra"
             user_selected_opcions.subTotal[1] = 0
-            renderHouseFacadeConfirmation()
+            renderHouseWall()
         })
         chapaBlancaYMadera.addEventListener("click", () => {
             user_selected_opcions.houseFacade = "Chapa Blanca y Madera"
             user_selected_opcions.subTotal[1] = facade_wood[houseVariant]
-            renderHouseFacadeConfirmation()
+            renderHouseWall()
         })
         chapaNegraYMadera.addEventListener("click", () => {
             user_selected_opcions.houseFacade = "Chapa Negra y Madera"
             user_selected_opcions.subTotal[1] = facade_wood[houseVariant]
-            renderHouseFacadeConfirmation()
+            renderHouseWall()
         })
     } else if (houseVariant === "pm2a" || houseVariant === "pm2b") {
         budgetContainer.innerHTML = `
+        <div class="question">
         <h2>¿Qué fachada desea?</h2>
         <div class="choiceContainer">
         <div id="chapaBlanca"><img src="./img/facade/${houseVariant}_chapa_blanca.jpg"><p>Chapa Blanca</p></div>
         <div id="chapaNegra"><img src="./img/facade/${houseVariant}_chapa_negra.jpg"><p>Chapa Negra</p></div>
+        </div>
         </div>
     `
         const chapaBlanca = document.getElementById("chapaBlanca")
@@ -385,19 +409,21 @@ const renderHouseFacade = () => {
         chapaBlanca.addEventListener("click", () => {
             user_selected_opcions.houseFacade = "Chapa Blanca"
             user_selected_opcions.subTotal[1] = 0
-            renderHouseFacadeConfirmation()
+            renderHouseWall()
         })
         chapaNegra.addEventListener("click", () => {
             user_selected_opcions.houseFacade = "Chapa Negra"
             user_selected_opcions.subTotal[1] = 0
-            renderHouseFacadeConfirmation()
+            renderHouseWall()
         })
     } else if (houseVariant === "pm2c" || houseVariant === "pm3a") {
         budgetContainer.innerHTML = `
+        <div class="question">
         <h2>¿Qué fachada desea?</h2>
         <div class="choiceContainer">
         <div id="chapaBlancaYMadera"><img src="./img/facade/${houseVariant}_chapa_blanca_madera.jpg"><p>Chapa Blanca y Madera</p></div>
         <div id="chapaNegraYMadera"><img src="./img/facade/${houseVariant}_chapa_negra_madera.jpg"><p>Chapa Negra y Madera</p></div>
+        </div>
         </div>
         `
         const chapaBlancaYMadera = document.getElementById("chapaBlancaYMadera")
@@ -405,41 +431,26 @@ const renderHouseFacade = () => {
         chapaBlancaYMadera.addEventListener("click", () => {
             user_selected_opcions.houseFacade = "Chapa Blanca y Madera"
             user_selected_opcions.subTotal[1] = facade_wood[houseVariant]
-            renderHouseFacadeConfirmation()
+            renderHouseWall()
         })
         chapaNegraYMadera.addEventListener("click", () => {
             user_selected_opcions.houseFacade = "Chapa Negra y Madera"
             user_selected_opcions.subTotal[1] = facade_wood[houseVariant]
-            renderHouseFacadeConfirmation()
+            renderHouseWall()
         })
     }
-}
-const renderHouseFacadeConfirmation = () => {
-    budgetContainer.innerHTML = `
-        <h2>¡Así se ve su elección! ¿Desea continuar?</h2>
-        <div class="choiceContainer">
-        <div id="goForward"><p>Me gusta</p></div>
-        <div id="goBack"><p>Volver a elegir la fachada</p></div>
-        </div>
-        `
-    const goForward = document.getElementById("goForward")
-    const goBack = document.getElementById("goBack")
-    goForward.addEventListener("click", () => {
-        renderHouseWall()
-    })
-    goBack.addEventListener("click", () => {
-        renderHouseFacade()
-    })
 }
 
 /* Eleccion de las paredes */
 const renderHouseWall = () => {
     const houseVariant = user_selected_opcions.houseVariant
     budgetContainer.innerHTML = `
+    <div class="question">
     <h2>¿Qué paredes desea?</h2>
     <div class="choiceContainer">
     <div id="wall_white"><p>Pintura latex interior</p></div>
     <div id="wall_wood"><p>Melamina simil madera</p></div>
+    </div>
     </div>
 `
     const wall_white = document.getElementById("wall_white")
@@ -459,10 +470,12 @@ const renderHouseWall = () => {
 const renderHouseFloor = () => {
     const houseVariant = user_selected_opcions.houseVariant
     budgetContainer.innerHTML = `
+    <div class="question">
     <h2>¿Qué piso desea?</h2>
     <div class="choiceContainer">
     <div id="floor_gray"><p>Porcellanato gris neutro</p></div>
     <div id="floor_wood"><p>Porcellanato simil madera</p></div>
+    </div>
     </div>
 `
     const gray = document.getElementById("floor_gray")
@@ -517,12 +530,14 @@ const renderHouseWallAndFloorConfirmation = () => {
     }
     imgName = "interior_" + wall + "_piso_" + floor + ".jpg"
     budgetContainer.innerHTML = `
-        <h2>¡Así se ve su elección! ¿Desea continuar?</h2>
-        <img class="floor_wall_image" src="./img/floor_wall/${modelSelection}/${imgName}">
-        <div class="choiceContainer">
-        <div id="goForward"><p>Me gusta</p></div>
-        <div id="goBack"><p>Volver a elegir las paredes y el piso</p></div>
-        </div>
+    <div class="question">
+    <h2>¡Así se ve su elección! ¿Desea continuar?</h2>
+    <img class="floor_wall_image" src="./img/floor_wall/${modelSelection}/${imgName}">
+    <div class="choiceContainer">
+    <div id="goForward"><p>Me gusta</p></div>
+    <div id="goBack"><p>Volver a elegir las paredes y el piso</p></div>
+    </div>
+    </div>
         `
     const goForward = document.getElementById("goForward")
     const goBack = document.getElementById("goBack")
@@ -542,6 +557,7 @@ const renderUserElections = () => {
     })
     const total = acum
     budgetContainer.innerHTML = `
+    <div>
     <h2>${user_selected_opcions.user_name}, ¡Aquí puedes ver tu presupuesto!</h2>
     <div><h3>Tipo de casa: ${user_selected_opcions.typeofHouse}</h3></div>
     <div><h3>Modelo de casa: ${user_selected_opcions.houseVariant}</h3></div>
@@ -549,6 +565,7 @@ const renderUserElections = () => {
     <div><h3>Paredes: ${user_selected_opcions.houseWall}</h3></div>
     <div><h3>Piso: ${user_selected_opcions.houseFloor}</h3></div>
     <div><h3>Total: $${total}</h3></div>
+    </div>
 
 `
     console.log(user_selected_opcions)
