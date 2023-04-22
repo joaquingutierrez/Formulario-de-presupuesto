@@ -43,6 +43,7 @@ h2 {
     color: #fff;
     border: #C82514;
     border-radius: 5px;
+    cursor: pointer;
 }
 .inputName button:hover {
     background-color: #70180e;
@@ -67,7 +68,7 @@ h2 {
     align-items: center;
 }
 
-.choiceContainer div {
+.choiceContainer div, #pdfButton {
     width: fit-content;
     padding: 15px 10px;
     margin: 50px;
@@ -84,7 +85,7 @@ h2 {
     width: 400px;
 }
 
-.choiceContainer div:hover {
+.choiceContainer div:hover, #pdfButton:hover {
     background-color: #70180e;
 }
 
