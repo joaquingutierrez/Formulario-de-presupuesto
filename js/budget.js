@@ -523,9 +523,7 @@ const renderHouseWallAndFloorConfirmation = () => {
     }
     if (user_selected_opcions.houseWall === "Pintura latex interior") {
         wall = "blanco"
-        console.log(" NO entre")
     } else {
-        console.log("entre")
         wall = "madera"
     }
     imgName = "interior_" + wall + "_piso_" + floor + ".jpg"
@@ -565,9 +563,32 @@ const renderUserElections = () => {
     <div><h3>Paredes: ${user_selected_opcions.houseWall}</h3></div>
     <div><h3>Piso: ${user_selected_opcions.houseFloor}</h3></div>
     <div><h3>Total: $${total}</h3></div>
+    <h4 id="pdfButton">Descargar PDF</h4>
     </div>
     <img src="./img/plano/${user_selected_opcions.houseVariant}.jpg">
 
 `
-    console.log(user_selected_opcions)
+    const pdfButton = document.getElementById("pdfButton")
+    pdfButton.addEventListener("click", () => downloadPDF(user_selected_opcions, total))
+}
+
+
+/* generando el PDF para descargar */
+const downloadPDF = (user_selected_opcions, total) => {
+    const doc = new jsPDF();
+    const text = `
+    
+    ${user_selected_opcions.user_name}, ¡Aquí puedes ver tu presupuesto!
+    Tipo de casa: ${user_selected_opcions.typeofHouse}
+    Modelo de casa: ${user_selected_opcions.houseVariant}
+    Fachada: ${user_selected_opcions.houseFacade}
+    Paredes: ${user_selected_opcions.houseWall}
+    Piso: ${user_selected_opcions.houseFloor}
+    Total: $${total}
+    `
+    doc.text(text, 10, 10);
+    var image1 = new Image();
+    image1.src = `./img/plano/${user_selected_opcions.houseVariant}.jpg`; /// URL de la imagen
+    doc.addImage(image1, 'jpg', 25, 75, 170, 180); // Agregar la imagen al PDF (X, Y, Width, Height)
+    doc.save("Presupuesto.pdf");
 }
