@@ -316,7 +316,7 @@ const renderHouseFacade = () => {
         })
         wood.addEventListener("click", () => {
             user_selected_opcions.houseFacade = "Madera"
-            user_selected_opcions.subTotal[1] = facade_wood.houseVariant
+            user_selected_opcions.subTotal[1] = facade_wood[houseVariant]
             renderHouseFacadeConfirmation()
         })
     } else if (houseVariant === "nm2a" || houseVariant === "nm2b" || houseVariant === "nm3a" || houseVariant === "nm3b") {
@@ -343,12 +343,12 @@ const renderHouseFacade = () => {
         })
         chapaBlancaYMadera.addEventListener("click", () => {
             user_selected_opcions.houseFacade = "Chapa Blanca y Madera"
-            user_selected_opcions.subTotal[1] = facade_wood.houseVariant
+            user_selected_opcions.subTotal[1] = facade_wood[houseVariant]
             renderHouseFacadeConfirmation()
         })
         chapaNegraYMadera.addEventListener("click", () => {
             user_selected_opcions.houseFacade = "Chapa Negra y Madera"
-            user_selected_opcions.subTotal[1] = facade_wood.houseVariant
+            user_selected_opcions.subTotal[1] = facade_wood[houseVariant]
             renderHouseFacadeConfirmation()
         })
     } else if (houseVariant === "pm2a" || houseVariant === "pm2b") {
@@ -379,12 +379,12 @@ const renderHouseFacade = () => {
         const chapaNegraYMadera = document.getElementById("chapaNegraYMadera")
         chapaBlancaYMadera.addEventListener("click", () => {
             user_selected_opcions.houseFacade = "Chapa Blanca y Madera"
-            user_selected_opcions.subTotal[1] = facade_wood.houseVariant
+            user_selected_opcions.subTotal[1] = facade_wood[houseVariant]
             renderHouseFacadeConfirmation()
         })
         chapaNegraYMadera.addEventListener("click", () => {
             user_selected_opcions.houseFacade = "Chapa Negra y Madera"
-            user_selected_opcions.subTotal[1] = facade_wood.houseVariant
+            user_selected_opcions.subTotal[1] = facade_wood[houseVariant]
             renderHouseFacadeConfirmation()
         })
     }
@@ -407,6 +407,7 @@ const renderHouseFacadeConfirmation = () => {
 
 /* Eleccion de las paredes */
 const renderHouseWall = () => {
+    const houseVariant = user_selected_opcions.houseVariant
     budgetContainer.innerHTML = `
     <h2>¿Qué paredes desea?</h2>
     <div id="wall_white"><p>Pintura latex interior</p></div>
@@ -416,28 +417,33 @@ const wall_white = document.getElementById("wall_white")
 const wall_wood = document.getElementById("wall_wood")
 wall_white.addEventListener("click", () => {
     user_selected_opcions.houseWall = "Pintura latex interior"
+    user_selected_opcions.subTotal[2] = 0
     renderHouseFloor()
 })
 wall_wood.addEventListener("click", () => {
     user_selected_opcions.houseWall = "Melamina simil madera"
+    user_selected_opcions.subTotal[2] = ceiling_wood[houseVariant]
     renderHouseFloor()
 })
 }
 /* Eleccion del piso */
 const renderHouseFloor = () => {
+    const houseVariant = user_selected_opcions.houseVariant
     budgetContainer.innerHTML = `
     <h2>¿Qué piso desea?</h2>
     <div id="floor_gray"><p>Porcellanato gris neutro</p></div>
     <div id="floor_wood"><p>Porcellanato simil madera</p></div>
 `
-    const floor_gray = document.getElementById("floor_gray")
-    const floor_wood = document.getElementById("floor_wood")
-    floor_gray.addEventListener("click", () => {
+    const gray = document.getElementById("floor_gray")
+    const wood = document.getElementById("floor_wood")
+    gray.addEventListener("click", () => {
         user_selected_opcions.houseFloor = "Porcellanato gris neutro"
+        user_selected_opcions.subTotal[3] = 0
         renderHouseWallAndFloorConfirmation()
     })
-    floor_wood.addEventListener("click", () => {
+    wood.addEventListener("click", () => {
         user_selected_opcions.houseFloor = "Porcellanato simil madera"
+        user_selected_opcions.subTotal[3] = floor_wood[houseVariant]
         renderHouseWallAndFloorConfirmation()
     })
 }
@@ -461,6 +467,11 @@ const renderHouseWallAndFloorConfirmation = () => {
 
 /* Slide con todas las eleciones */
 const renderUserElections = () => {
+    let acum = 0
+    user_selected_opcions.subTotal.map((item) => {
+        acum += item
+    })
+    const total = acum
     budgetContainer.innerHTML = `
     <h2>${user_selected_opcions.user_name}, ¡Aquí puedes ver tu presupuesto!</h2>
     <div><h3>Tipo de casa: ${user_selected_opcions.typeofHouse}</h3></div>
@@ -468,7 +479,8 @@ const renderUserElections = () => {
     <div><h3>Fachada: ${user_selected_opcions.houseFacade}</h3></div>
     <div><h3>Paredes: ${user_selected_opcions.houseWall}</h3></div>
     <div><h3>Piso: ${user_selected_opcions.houseFloor}</h3></div>
-    <div><h3>Total: $</h3></div>
+    <div><h3>Total: $${total}</h3></div>
 
 `
+console.log(user_selected_opcions)
 }
