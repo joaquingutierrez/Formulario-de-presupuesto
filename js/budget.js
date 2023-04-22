@@ -422,11 +422,11 @@ const renderHouseFloor = () => {
     const floor_gray = document.getElementById("floor_gray")
     const floor_wood = document.getElementById("floor_wood")
     floor_gray.addEventListener("click", () => {
-        user_selected_opcions.HouseFloor = "Porcellanato gris neutro"
+        user_selected_opcions.houseFloor = "Porcellanato gris neutro"
         renderHouseWallAndFloorConfirmation()
     })
     floor_wood.addEventListener("click", () => {
-        user_selected_opcions.HouseFloor = "Porcellanato simil madera"
+        user_selected_opcions.houseFloor = "Porcellanato simil madera"
         renderHouseWallAndFloorConfirmation()
     })
 }
@@ -441,7 +441,7 @@ const renderHouseWallAndFloorConfirmation = () => {
     const goForward = document.getElementById("goForward")
     const goBack = document.getElementById("goBack")
     goForward.addEventListener("click", () => {
-        /* Slide siguiente */
+        renderUserElections()
     })
     goBack.addEventListener("click", () => {
         renderHouseWall()
@@ -449,4 +449,15 @@ const renderHouseWallAndFloorConfirmation = () => {
 }
 
 /* Slide con todas las eleciones */
-const renderUserElections = 
+const renderUserElections = () => {
+    budgetContainer.innerHTML = `
+    <h2>${user_selected_opcions.user_name}, ¡Aquí puedes ver tu presupuesto!</h2>
+    <div><h3>Tipo de casa: ${user_selected_opcions.typeofHouse}</h3></div>
+    <div><h3>Modelo de casa: ${user_selected_opcions.houseVariant}</h3></div>
+    <div><h3>Fachada: ${user_selected_opcions.houseFacade}</h3></div>
+    <div><h3>Paredes: ${user_selected_opcions.houseWall}</h3></div>
+    <div><h3>Piso: ${user_selected_opcions.houseFloor}</h3></div>
+    <div><h3>Total: $</h3></div>
+
+`
+}
