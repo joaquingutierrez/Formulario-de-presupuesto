@@ -1,0 +1,17 @@
+nm1a.....modelo1
+nm1b.....modelo1
+nm1c.....modelo1
+nm1d.....modelo2
+nm2a.....modelo1
+nm2b.....modelo3
+nm3a.....modelo1
+nm3b.....modelo4
+
+pm1a.....modelo5
+pm1b.....modelo5
+pm1c.....modelo5
+pm1d.....modelo6
+pm2a.....modelo7
+pm2b.....modelo7
+pm2c.....modelo7
+pm3a.....modelo8

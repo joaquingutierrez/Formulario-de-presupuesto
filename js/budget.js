@@ -481,8 +481,36 @@ const renderHouseFloor = () => {
 
 /* Confirmacion de las paredes y el piso */
 const renderHouseWallAndFloorConfirmation = () => {
+    const houseVariant = user_selected_opcions.houseVariant
+    let modelSelection
+    if (houseVariant === "nm1a" || houseVariant === "nm1b" || houseVariant === "nm1c" || houseVariant === "nm2a" || houseVariant === "nm3a") {
+        modelSelection = "model1"
+    } else if (houseVariant === "nm1d") {
+        modelSelection = "model2"
+    } else if (houseVariant === "nm2b") {
+        modelSelection = "model3"
+    } else if (houseVariant === "nm3b") {
+        modelSelection = "model4"
+    } else if (houseVariant === "pm1a" || houseVariant === "pm1b" || houseVariant === "pm1c") {
+        modelSelection = "model5"
+    } else if (houseVariant === "pm1d") {
+        modelSelection = "model6"
+    } else if (houseVariant === "pm2a" || houseVariant === "pm2b" || houseVariant === "pm2c") {
+        modelSelection = "model7"
+    } else if (houseVariant === "pm3a") {
+        modelSelection = "model8"
+    }
+    let floor
+    let wall
+    let imgName
+    if (user_selected_opcions.houseFloor === "Porcellanato gris neutro") {
+        if (user_selected_opcions.houseWall === "Pintura latex interior") {
+            imgName = wall + "_" + floor
+        }
+    }
     budgetContainer.innerHTML = `
         <h2>¡Así se ve su elección! ¿Desea continuar?</h2>
+        <img src="">
         <div class="choiceContainer">
         <div id="goForward"><p>Me gusta</p></div>
         <div id="goBack"><p>Volver a elegir las paredes y el piso</p></div>
