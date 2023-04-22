@@ -277,3 +277,16 @@ const renderVariantOfpm2 = () => {
         renderHouseFacade()
     })
 }
+/* Pampa Modelo 3 */
+const renderVariantOfpm3 = () => {
+    budgetContainer.innerHTML = `
+        <h2>¿Qué variante desea?</h2>
+        <div id="pm3a"><p>Modelo 3A</p></div>
+        <div id="pm3b"><p>Modelo 3B</p></div>
+    `
+    const pm3a = document.getElementById("pm3a")
+    pm3a.addEventListener("click", () => {
+        user_selected_opcions = {...user_selected_opcions, houseVariant: "pm3a"}
+        renderHouseFacade()
+    })
+}
