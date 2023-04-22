@@ -315,9 +315,9 @@ const renderHouseFacade = () => {
         budgetContainer.innerHTML = `
             <h2>¿Qué fachada desea?</h2>
             <div class="choiceContainer">
-            <div id="chapaBlanca"><p>Chapa Blanca</p></div>
-            <div id="chapaNegra"><p>Chapa Negra</p></div>
-            <div id="wood"><p>Madera</p></div>
+            <div id="chapaBlanca"><img src="./img/facade/${houseVariant}_chapa_blanca.jpg"><p>Chapa Blanca</p></div>
+            <div id="chapaNegra"><img src="./img/facade/${houseVariant}_chapa_negra.jpg"><p>Chapa Negra</p></div>
+            <div id="wood"><img src="./img/facade/${houseVariant}_madera.jpg"><p>Madera</p></div>
             </div>
         `
         const chapaBlanca = document.getElementById("chapaBlanca")
@@ -342,10 +342,10 @@ const renderHouseFacade = () => {
         budgetContainer.innerHTML = `
         <h2>¿Qué fachada desea?</h2>
         <div class="choiceContainer">
-        <div id="chapaBlanca"><p>Chapa Blanca</p></div>
-        <div id="chapaNegra"><p>Chapa Negra</p></div>
-        <div id="chapaBlancaYMadera"><p>Chapa Blanca y Madera</p></div>
-        <div id="chapaNegraYMadera"><p>Chapa Negra y Madera</p></div>
+        <div id="chapaBlanca"><img src="./img/facade/${houseVariant}_chapa_blanca.jpg"><p>Chapa Blanca</p></div>
+        <div id="chapaNegra"><img src="./img/facade/${houseVariant}_chapa_negra.jpg"><p>Chapa Negra</p></div>
+        <div id="chapaBlancaYMadera"><img src="./img/facade/${houseVariant}_chapa_blanca_madera.jpg"><p>Chapa Blanca y Madera</p></div>
+        <div id="chapaNegraYMadera"><img src="./img/facade/${houseVariant}_chapa_negra_madera.jpg"><p>Chapa Negra y Madera</p></div>
         </div>
         `
         const chapaBlanca = document.getElementById("chapaBlanca")
@@ -376,8 +376,8 @@ const renderHouseFacade = () => {
         budgetContainer.innerHTML = `
         <h2>¿Qué fachada desea?</h2>
         <div class="choiceContainer">
-        <div id="chapaBlanca"><p>Chapa Blanca</p></div>
-        <div id="chapaNegra"><p>Chapa Negra</p></div>
+        <div id="chapaBlanca"><img src="./img/facade/${houseVariant}_chapa_blanca.jpg"><p>Chapa Blanca</p></div>
+        <div id="chapaNegra"><img src="./img/facade/${houseVariant}_chapa_negra.jpg"><p>Chapa Negra</p></div>
         </div>
     `
         const chapaBlanca = document.getElementById("chapaBlanca")
@@ -396,8 +396,8 @@ const renderHouseFacade = () => {
         budgetContainer.innerHTML = `
         <h2>¿Qué fachada desea?</h2>
         <div class="choiceContainer">
-        <div id="chapaBlancaYMadera"><p>Chapa Blanca y Madera</p></div>
-        <div id="chapaNegraYMadera"><p>Chapa Negra y Madera</p></div>
+        <div id="chapaBlancaYMadera"><img src="./img/facade/${houseVariant}_chapa_blanca_madera.jpg"><p>Chapa Blanca y Madera</p></div>
+        <div id="chapaNegraYMadera"><img src="./img/facade/${houseVariant}_chapa_negra_madera.jpg"><p>Chapa Negra y Madera</p></div>
         </div>
         `
         const chapaBlancaYMadera = document.getElementById("chapaBlancaYMadera")
