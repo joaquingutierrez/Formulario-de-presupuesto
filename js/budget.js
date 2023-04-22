@@ -566,6 +566,7 @@ const renderUserElections = () => {
     <div><h3>Piso: ${user_selected_opcions.houseFloor}</h3></div>
     <div><h3>Total: $${total}</h3></div>
     </div>
+    <img src="./img/plano/${user_selected_opcions.houseVariant}.jpg">
 
 `
     console.log(user_selected_opcions)
