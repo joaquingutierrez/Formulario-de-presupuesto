@@ -145,19 +145,19 @@ const renderVariantOfnm1 = () => {
     const nm1c = document.getElementById("nm1c")
     const nm1d = document.getElementById("nm1d")
     nm1a.addEventListener("click", () => {
-        user_selected_opcions = { ...user_selected_opcions, houseVariant: "nm1a" }
+        user_selected_opcions = { ...user_selected_opcions, houseVariant: "nm1a", subTotal: [house_price.nm1a] }
         renderHouseFacade()
     })
     nm1b.addEventListener("click", () => {
-        user_selected_opcions = { ...user_selected_opcions, houseVariant: "nm1b" }
+        user_selected_opcions = { ...user_selected_opcions, houseVariant: "nm1b", subTotal: [house_price.nm1b] }
         renderHouseFacade()
     })
     nm1c.addEventListener("click", () => {
-        user_selected_opcions = { ...user_selected_opcions, houseVariant: "nm1c" }
+        user_selected_opcions = { ...user_selected_opcions, houseVariant: "nm1c", subTotal: [house_price.nm1c] }
         renderHouseFacade()
     })
     nm1d.addEventListener("click", () => {
-        user_selected_opcions = { ...user_selected_opcions, houseVariant: "nm1d" }
+        user_selected_opcions = { ...user_selected_opcions, houseVariant: "nm1d", subTotal: [house_price.nm1d] }
         renderHouseFacade()
     })
 }
@@ -171,11 +171,11 @@ const renderVariantOfnm2 = () => {
     const nm2a = document.getElementById("nm2a")
     const nm2b = document.getElementById("nm2b")
     nm2a.addEventListener("click", () => {
-        user_selected_opcions = { ...user_selected_opcions, houseVariant: "nm2a" }
+        user_selected_opcions = { ...user_selected_opcions, houseVariant: "nm2a", subTotal: [house_price.nm2a] }
         renderHouseFacade()
     })
     nm2b.addEventListener("click", () => {
-        user_selected_opcions = { ...user_selected_opcions, houseVariant: "nm2b" }
+        user_selected_opcions = { ...user_selected_opcions, houseVariant: "nm2b", subTotal: [house_price.nm2b] }
         renderHouseFacade()
     })
 }
@@ -189,11 +189,11 @@ const renderVariantOfnm3 = () => {
     const nm3a = document.getElementById("nm3a")
     const nm3b = document.getElementById("nm3b")
     nm3a.addEventListener("click", () => {
-        user_selected_opcions = { ...user_selected_opcions, houseVariant: "nm3a" }
+        user_selected_opcions = { ...user_selected_opcions, houseVariant: "nm3a", subTotal: [house_price.nm3a] }
         renderHouseFacade()
     })
     nm3b.addEventListener("click", () => {
-        user_selected_opcions = { ...user_selected_opcions, houseVariant: "nm3b" }
+        user_selected_opcions = { ...user_selected_opcions, houseVariant: "nm3b", subTotal: [house_price.nm3b] }
         renderHouseFacade()
     })
 }
@@ -237,19 +237,19 @@ const renderVariantOfpm1 = () => {
     const pm1c = document.getElementById("pm1c")
     const pm1d = document.getElementById("pm1d")
     pm1a.addEventListener("click", () => {
-        user_selected_opcions = { ...user_selected_opcions, houseVariant: "pm1a" }
+        user_selected_opcions = { ...user_selected_opcions, houseVariant: "pm1a", subTotal: [house_price.pm1a] }
         renderHouseFacade()
     })
     pm1b.addEventListener("click", () => {
-        user_selected_opcions = { ...user_selected_opcions, houseVariant: "pm1b" }
+        user_selected_opcions = { ...user_selected_opcions, houseVariant: "pm1b", subTotal: [house_price.pm1b] }
         renderHouseFacade()
     })
     pm1c.addEventListener("click", () => {
-        user_selected_opcions = { ...user_selected_opcions, houseVariant: "pm1c" }
+        user_selected_opcions = { ...user_selected_opcions, houseVariant: "pm1c", subTotal: [house_price.pm1c] }
         renderHouseFacade()
     })
     pm1d.addEventListener("click", () => {
-        user_selected_opcions = { ...user_selected_opcions, houseVariant: "pm1d" }
+        user_selected_opcions = { ...user_selected_opcions, houseVariant: "pm1d", subTotal: [house_price.pm1d] }
         renderHouseFacade()
     })
 }
@@ -265,15 +265,15 @@ const renderVariantOfpm2 = () => {
     const pm2b = document.getElementById("pm2b")
     const pm2c = document.getElementById("pm2c")
     pm2a.addEventListener("click", () => {
-        user_selected_opcions = { ...user_selected_opcions, houseVariant: "pm2a" }
+        user_selected_opcions = { ...user_selected_opcions, houseVariant: "pm2a", subTotal: [house_price.pm2a] }
         renderHouseFacade()
     })
     pm2b.addEventListener("click", () => {
-        user_selected_opcions = { ...user_selected_opcions, houseVariant: "pm2b" }
+        user_selected_opcions = { ...user_selected_opcions, houseVariant: "pm2b", subTotal: [house_price.pm2b] }
         renderHouseFacade()
     })
     pm2c.addEventListener("click", () => {
-        user_selected_opcions = { ...user_selected_opcions, houseVariant: "pm2c" }
+        user_selected_opcions = { ...user_selected_opcions, houseVariant: "pm2c", subTotal: [house_price.pm2c] }
         renderHouseFacade()
     })
 }
@@ -286,7 +286,7 @@ const renderVariantOfpm3 = () => {
     `
     const pm3a = document.getElementById("pm3a")
     pm3a.addEventListener("click", () => {
-        user_selected_opcions = { ...user_selected_opcions, houseVariant: "pm3a" }
+        user_selected_opcions = { ...user_selected_opcions, houseVariant: "pm3a", subTotal: [house_price.pm3a] }
         renderHouseFacade()
     })
 }
