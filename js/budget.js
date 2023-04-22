@@ -145,19 +145,19 @@ const renderVariantOfnm1 = () => {
     const nm1c = document.getElementById("nm1c")
     const nm1d = document.getElementById("nm1d")
     nm1a.addEventListener("click", () => {
-        user_selected_opcions = {...user_selected_opcions, houseVariant: "nm1a"}
+        user_selected_opcions = { ...user_selected_opcions, houseVariant: "nm1a" }
         renderHouseFacade()
     })
     nm1b.addEventListener("click", () => {
-        user_selected_opcions = {...user_selected_opcions, houseVariant: "nm1b"}
+        user_selected_opcions = { ...user_selected_opcions, houseVariant: "nm1b" }
         renderHouseFacade()
     })
     nm1c.addEventListener("click", () => {
-        user_selected_opcions = {...user_selected_opcions, houseVariant: "nm1c"}
+        user_selected_opcions = { ...user_selected_opcions, houseVariant: "nm1c" }
         renderHouseFacade()
     })
     nm1d.addEventListener("click", () => {
-        user_selected_opcions = {...user_selected_opcions, houseVariant: "nm1d"}
+        user_selected_opcions = { ...user_selected_opcions, houseVariant: "nm1d" }
         renderHouseFacade()
     })
 }
@@ -171,11 +171,11 @@ const renderVariantOfnm2 = () => {
     const nm2a = document.getElementById("nm2a")
     const nm2b = document.getElementById("nm2b")
     nm2a.addEventListener("click", () => {
-        user_selected_opcions = {...user_selected_opcions, houseVariant: "nm2a"}
+        user_selected_opcions = { ...user_selected_opcions, houseVariant: "nm2a" }
         renderHouseFacade()
     })
     nm2b.addEventListener("click", () => {
-        user_selected_opcions = {...user_selected_opcions, houseVariant: "nm2b"}
+        user_selected_opcions = { ...user_selected_opcions, houseVariant: "nm2b" }
         renderHouseFacade()
     })
 }
@@ -189,11 +189,11 @@ const renderVariantOfnm3 = () => {
     const nm3a = document.getElementById("nm3a")
     const nm3b = document.getElementById("nm3b")
     nm3a.addEventListener("click", () => {
-        user_selected_opcions = {...user_selected_opcions, houseVariant: "nm3a"}
+        user_selected_opcions = { ...user_selected_opcions, houseVariant: "nm3a" }
         renderHouseFacade()
     })
     nm3b.addEventListener("click", () => {
-        user_selected_opcions = {...user_selected_opcions, houseVariant: "nm3b"}
+        user_selected_opcions = { ...user_selected_opcions, houseVariant: "nm3b" }
         renderHouseFacade()
     })
 }
@@ -237,19 +237,19 @@ const renderVariantOfpm1 = () => {
     const pm1c = document.getElementById("pm1c")
     const pm1d = document.getElementById("pm1d")
     pm1a.addEventListener("click", () => {
-        user_selected_opcions = {...user_selected_opcions, houseVariant: "pm1a"}
+        user_selected_opcions = { ...user_selected_opcions, houseVariant: "pm1a" }
         renderHouseFacade()
     })
     pm1b.addEventListener("click", () => {
-        user_selected_opcions = {...user_selected_opcions, houseVariant: "pm1b"}
+        user_selected_opcions = { ...user_selected_opcions, houseVariant: "pm1b" }
         renderHouseFacade()
     })
     pm1c.addEventListener("click", () => {
-        user_selected_opcions = {...user_selected_opcions, houseVariant: "pm1c"}
+        user_selected_opcions = { ...user_selected_opcions, houseVariant: "pm1c" }
         renderHouseFacade()
     })
     pm1d.addEventListener("click", () => {
-        user_selected_opcions = {...user_selected_opcions, houseVariant: "pm1d"}
+        user_selected_opcions = { ...user_selected_opcions, houseVariant: "pm1d" }
         renderHouseFacade()
     })
 }
@@ -265,15 +265,15 @@ const renderVariantOfpm2 = () => {
     const pm2b = document.getElementById("pm2b")
     const pm2c = document.getElementById("pm2c")
     pm2a.addEventListener("click", () => {
-        user_selected_opcions = {...user_selected_opcions, houseVariant: "pm2a"}
+        user_selected_opcions = { ...user_selected_opcions, houseVariant: "pm2a" }
         renderHouseFacade()
     })
     pm2b.addEventListener("click", () => {
-        user_selected_opcions = {...user_selected_opcions, houseVariant: "pm2b"}
+        user_selected_opcions = { ...user_selected_opcions, houseVariant: "pm2b" }
         renderHouseFacade()
     })
     pm2c.addEventListener("click", () => {
-        user_selected_opcions = {...user_selected_opcions, houseVariant: "pm2c"}
+        user_selected_opcions = { ...user_selected_opcions, houseVariant: "pm2c" }
         renderHouseFacade()
     })
 }
@@ -286,7 +286,84 @@ const renderVariantOfpm3 = () => {
     `
     const pm3a = document.getElementById("pm3a")
     pm3a.addEventListener("click", () => {
-        user_selected_opcions = {...user_selected_opcions, houseVariant: "pm3a"}
+        user_selected_opcions = { ...user_selected_opcions, houseVariant: "pm3a" }
         renderHouseFacade()
     })
+}
+
+/* Fachada de la casa */
+const renderHouseFacade = () => {
+    const houseVariant = user_selected_opcions.houseVariant
+    if (houseVariant === "nm1a" || houseVariant === "nm1b" || houseVariant === "nm1c" || houseVariant === "nm1d" || houseVariant === "pm1a" || houseVariant === "pm1b" || houseVariant === "pm1c" || houseVariant === "pm1d") {
+        budgetContainer.innerHTML = `
+            <h2>¿Qué fachada desea?</h2>
+            <div id="chapaBlanca"><p>Chapa Blanca</p></div>
+            <div id="chapaNegra"><p>Chapa Negra</p></div>
+            <div id="wood"><p>Madera</p></div>
+        `
+        const chapaBlanca = document.getElementById("chapaBlanca")
+        const chapaNegra = document.getElementById("chapaNegra")
+        const wood = document.getElementById("wood")
+        chapaBlanca.addEventListener("click", () => {
+            user_selected_opcions.houseFacade = "Chapa Blanca"
+        })
+        chapaNegra.addEventListener("click", () => {
+            user_selected_opcions.houseFacade = "Chapa Negra"
+        })
+        wood.addEventListener("click", () => {
+            user_selected_opcions.houseFacade = "Madera"
+        })
+    } else if (houseVariant === "nm2a" || houseVariant === "nm2b" || houseVariant === "nm3a" || houseVariant === "nm3b") {
+        budgetContainer.innerHTML = `
+        <h2>¿Qué fachada desea?</h2>
+        <div id="chapaBlanca"><p>Chapa Blanca</p></div>
+        <div id="chapaNegra"><p>Chapa Negra</p></div>
+        <div id="chapaBlancaYMadera"><p>Chapa Blanca y Madera</p></div>
+        <div id="chapaNegraYMadera"><p>Chapa Negra y Madera</p></div>
+    `
+        const chapaBlanca = document.getElementById("chapaBlanca")
+        const chapaNegra = document.getElementById("chapaNegra")
+        const chapaBlancaYMadera = document.getElementById("chapaBlancaYMadera")
+        const chapaNegraYMadera = document.getElementById("chapaNegraYMadera")
+        chapaBlanca.addEventListener("click", () => {
+            user_selected_opcions.houseFacade = "Chapa Blanca"
+        })
+        chapaNegra.addEventListener("click", () => {
+            user_selected_opcions.houseFacade = "Chapa Negra"
+        })
+        chapaBlancaYMadera.addEventListener("click", () => {
+            user_selected_opcions.houseFacade = "Chapa Blanca y Madera"
+        })
+        chapaNegraYMadera.addEventListener("click", () => {
+            user_selected_opcions.houseFacade = "Chapa Negra y Madera"
+        })
+    } else if (houseVariant === "pm2a" || houseVariant === "pm2b") {
+        budgetContainer.innerHTML = `
+        <h2>¿Qué fachada desea?</h2>
+        <div id="chapaBlanca"><p>Chapa Blanca</p></div>
+        <div id="chapaNegra"><p>Chapa Negra</p></div>
+    `
+        const chapaBlanca = document.getElementById("chapaBlanca")
+        const chapaNegra = document.getElementById("chapaNegra")
+        chapaBlanca.addEventListener("click", () => {
+            user_selected_opcions.houseFacade = "Chapa Blanca"
+        })
+        chapaNegra.addEventListener("click", () => {
+            user_selected_opcions.houseFacade = "Chapa Negra"
+        })
+    } else if (houseVariant === "pm2c" || houseVariant === "pm3a") {
+        budgetContainer.innerHTML = `
+        <h2>¿Qué fachada desea?</h2>
+        <div id="chapaBlancaYMadera"><p>Chapa Blanca y Madera</p></div>
+        <div id="chapaNegraYMadera"><p>Chapa Negra y Madera</p></div>
+    `
+        const chapaBlancaYMadera = document.getElementById("chapaBlancaYMadera")
+        const chapaNegraYMadera = document.getElementById("chapaNegraYMadera")
+        chapaBlancaYMadera.addEventListener("click", () => {
+            user_selected_opcions.houseFacade = "Chapa Blanca y Madera"
+        })
+        chapaNegraYMadera.addEventListener("click", () => {
+            user_selected_opcions.houseFacade = "Chapa Negra y Madera"
+        })
+    }
 }
