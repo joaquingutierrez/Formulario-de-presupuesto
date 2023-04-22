@@ -32,3 +32,6 @@ body {
 .choiceContainer div:hover {
     background-color: #70180e;
 }
+.floor_wall_image {
+    width: 400px;
+}
