@@ -92,8 +92,8 @@ const renderTypeofHouse = () => {
     budgetContainer.innerHTML = `
         <h2>¿Qué tipo de casa desea?</h2>
         <div class="choiceContainer">
-        <div id="typeNorden"><p>Norden</p></div>
-        <div id="typePampa"><p>Pampa</p></div>
+        <div id="typeNorden"><img src="./img/facade/nm3a_chapa_negra_madera.jpg"><p>Norden</p></div>
+        <div id="typePampa"><img src="./img/facade/pm3a_chapa_negra_madera.jpg"><p>Pampa</p></div>
         </div>
     `
     const typeNorden = document.getElementById("typeNorden")
@@ -113,9 +113,9 @@ const renderTypeofNorden = () => {
     budgetContainer.innerHTML = `
         <h2>¿Qué modelo de casa desea?</h2>
         <div class="choiceContainer">
-        <div id="nm1"><p>Modelo 1</p></div>
-        <div id="nm2"><p>Modelo 2</p></div>
-        <div id="nm3"><p>Modelo 3</p></div>
+        <div id="nm1"><img src="./img/facade/nm1a_madera.jpg"><p>Modelo 1</p></div>
+        <div id="nm2"><img src="./img/facade/nm2a_chapa_negra_madera.jpg"><p>Modelo 2</p></div>
+        <div id="nm3"><img src="./img/facade/nm3a_chapa_negra_madera.jpg"><p>Modelo 3</p></div>
         </div>
     `
     const nm1 = document.getElementById("nm1")
@@ -140,10 +140,10 @@ const renderVariantOfnm1 = () => {
     budgetContainer.innerHTML = `
         <h2>¿Qué variante desea?</h2>
         <div class="choiceContainer">
-        <div id="nm1a"><p>Modelo 1A</p></div>
-        <div id="nm1b"><p>Modelo 1B</p></div>
-        <div id="nm1c"><p>Modelo 1C</p></div>
-        <div id="nm1d"><p>Modelo 1D</p></div>
+        <div id="nm1a"><img src="./img/facade/nm1a_madera.jpg"><p>Modelo 1A</p></div>
+        <div id="nm1b"><img src="./img/facade/nm1b_madera.jpg"><p>Modelo 1B</p></div>
+        <div id="nm1c"><img src="./img/facade/nm1c_madera.jpg"><p>Modelo 1C</p></div>
+        <div id="nm1d"><img src="./img/facade/nm1d_madera.jpg"><p>Modelo 1D</p></div>
         </div>
     `
     const nm1a = document.getElementById("nm1a")
@@ -172,8 +172,8 @@ const renderVariantOfnm2 = () => {
     budgetContainer.innerHTML = `
         <h2>¿Qué variante desea?</h2>
         <div class="choiceContainer">
-        <div id="nm2a"><p>Modelo 2A</p></div>
-        <div id="nm2b"><p>Modelo 2B</p></div>
+        <div id="nm2a"><img src="./img/facade/nm2a_chapa_negra_madera.jpg"><p>Modelo 2A</p></div>
+        <div id="nm2b"><img src="./img/facade/nm2b_chapa_negra_madera.jpg"><p>Modelo 2B</p></div>
         </div>
     `
     const nm2a = document.getElementById("nm2a")
@@ -192,8 +192,8 @@ const renderVariantOfnm3 = () => {
     budgetContainer.innerHTML = `
         <h2>¿Qué variante desea?</h2>
         <div class="choiceContainer">
-        <div id="nm3a"><p>Modelo 3A</p></div>
-        <div id="nm3b"><p>Modelo 3B</p></div>
+        <div id="nm3a"><img src="./img/facade/nm3a_chapa_negra_madera.jpg"><p>Modelo 3A</p></div>
+        <div id="nm3b"><img src="./img/facade/nm3b_chapa_negra_madera.jpg"><p>Modelo 3B</p></div>
         </div>
     `
     const nm3a = document.getElementById("nm3a")
@@ -213,9 +213,9 @@ const renderTypeofPampa = () => {
     budgetContainer.innerHTML = `
         <h2>¿Qué modelo de casa desea?</h2>
         <div class="choiceContainer">
-        <div id="pm1"><p>Modelo 1</p></div>
-        <div id="pm2"><p>Modelo 2</p></div>
-        <div id="pm3"><p>Modelo 3</p></div>
+        <div id="pm1"><img src="./img/facade/pm1a_madera.jpg"><p>Modelo 1</p></div>
+        <div id="pm2"><img src="./img/facade/pm2c_chapa_negra_madera.jpg"><p>Modelo 2</p></div>
+        <div id="pm3"><img src="./img/facade/pm3a_chapa_negra_madera.jpg"><p>Modelo 3</p></div>
         </div>
     `
     const pm1 = document.getElementById("pm1")
@@ -240,10 +240,10 @@ const renderVariantOfpm1 = () => {
     budgetContainer.innerHTML = `
         <h2>¿Qué variante desea?</h2>
         <div class="choiceContainer">
-        <div id="pm1a"><p>Modelo 1A</p></div>
-        <div id="pm1b"><p>Modelo 1B</p></div>
-        <div id="pm1c"><p>Modelo 1C</p></div>
-        <div id="pm1d"><p>Modelo 1D</p></div>
+        <div id="pm1a"><img src="./img/facade/pm1a_madera.jpg"><p>Modelo 1A</p></div>
+        <div id="pm1b"><img src="./img/facade/pm1b_madera.jpg"><p>Modelo 1B</p></div>
+        <div id="pm1c"><img src="./img/facade/pm1c_madera.jpg"><p>Modelo 1C</p></div>
+        <div id="pm1d"><img src="./img/facade/pm1d_madera.jpg"><p>Modelo 1D</p></div>
         </div>
     `
     const pm1a = document.getElementById("pm1a")
@@ -272,9 +272,9 @@ const renderVariantOfpm2 = () => {
     budgetContainer.innerHTML = `
         <h2>¿Qué variante desea?</h2>
         <div class="choiceContainer">
-        <div id="pm2a"><p>Modelo 2A</p></div>
-        <div id="pm2b"><p>Modelo 2B</p></div>
-        <div id="pm2c"><p>Modelo 2C</p></div>
+        <div id="pm2a"><img src="./img/facade/pm2a_chapa_negra.jpg"><p>Modelo 2A</p></div>
+        <div id="pm2b"><img src="./img/facade/pm2b_chapa_negra.jpg"><p>Modelo 2B</p></div>
+        <div id="pm2c"><img src="./img/facade/pm2c_chapa_negra_madera.jpg"><p>Modelo 2C</p></div>
         </div>
     `
     const pm2a = document.getElementById("pm2a")
@@ -298,8 +298,7 @@ const renderVariantOfpm3 = () => {
     budgetContainer.innerHTML = `
         <h2>¿Qué variante desea?</h2>
         <div class="choiceContainer">
-        <div id="pm3a"><p>Modelo 3A</p></div>
-        <div id="pm3b"><p>Modelo 3B</p></div>
+        <div id="pm3a"><img src="./img/facade/pm3a_chapa_negra_madera.jpg"><p>Modelo 3A</p></div>
         </div>
     `
     const pm3a = document.getElementById("pm3a")

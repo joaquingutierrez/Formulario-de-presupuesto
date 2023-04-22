@@ -3,17 +3,20 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 #budgetContainer {
-
-}
-.container {
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .choiceContainer {
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 .choiceContainer div {
     width: fit-content;
-    padding: 15px 100px;
+    padding: 15px 10px;
     margin: 50px;
     background-color: #C82514;
     border-radius: 5px;
@@ -21,6 +24,10 @@ body {
     color: #fff;
     font-weight: 700;
     transition: ease-in-out 0.3s;
+    text-align: center;
+}
+.choiceContainer img {
+    width: 400px;
 }
 .choiceContainer div:hover {
     background-color: #70180e;
