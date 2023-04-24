@@ -265,15 +265,15 @@ const renderTypeofPampa = () => {
     const pm2 = document.getElementById("pm2")
     const pm3 = document.getElementById("pm3")
     pm1.addEventListener("click", () => {
-        user_selected_opcions = { ...user_selected_opcions, modelHouse: "pm1" }
+        user_selected_opcions = { ...user_selected_opcions, houseModel: "pm1" }
         renderVariantOfpm1()
     })
     pm2.addEventListener("click", () => {
-        user_selected_opcions = { ...user_selected_opcions, modelHouse: "pm2" }
+        user_selected_opcions = { ...user_selected_opcions, houseModel: "pm2" }
         renderVariantOfpm2()
     })
     pm3.addEventListener("click", () => {
-        user_selected_opcions = { ...user_selected_opcions, modelHouse: "pm3" }
+        user_selected_opcions = { ...user_selected_opcions, houseModel: "pm3" }
         renderVariantOfpm3()
     })
 
@@ -497,6 +497,7 @@ const renderHouseFacade = () => {
             renderHouseWall()
         })
     }
+    console.log(user_selected_opcions.houseModel)
 
     const goBackButton = document.getElementById("goBackButton")
     goBackButton.addEventListener("click", () => {
