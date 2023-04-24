@@ -105,3 +105,8 @@ h2 {
 .budgetContainer {
     animation: transicionar 0.4s ease-in-out;
 }
+.materialsContainter img {
+    width: 350px;
+    height: 320px;
+    border-radius: 14%;
+}

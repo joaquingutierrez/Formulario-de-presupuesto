@@ -448,8 +448,8 @@ const renderHouseWall = () => {
     <div class="question">
     <h2>¿Qué paredes desea?</h2>
     <div class="choiceContainer">
-    <div id="wall_white"><p>Pintura latex interior</p></div>
-    <div id="wall_wood"><p>Melamina simil madera</p></div>
+    <div id="wall_white" class="materialsContainter"><img src="./img/materials/latex_blanco.jpg"><p>Pintura latex interior</p></div>
+    <div id="wall_wood" class="materialsContainter"><img src="./img/materials/melamina_madera.jpg"><p>Melamina simil madera</p></div>
     </div>
     </div>
 `
@@ -473,8 +473,8 @@ const renderHouseFloor = () => {
     <div class="question">
     <h2>¿Qué piso desea?</h2>
     <div class="choiceContainer">
-    <div id="floor_gray"><p>Porcellanato gris neutro</p></div>
-    <div id="floor_wood"><p>Porcellanato simil madera</p></div>
+    <div id="floor_gray" class="materialsContainter"><img src="./img/materials/porcellanato_gris.jpg"><p>Porcellanato gris neutro</p></div>
+    <div id="floor_wood" class="materialsContainter"><img src="./img/materials/porcellanato_madera.jpg"><p>Porcellanato simil madera</p></div>
     </div>
     </div>
 `

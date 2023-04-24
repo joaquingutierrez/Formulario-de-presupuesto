@@ -1,0 +1,6 @@
+*Agregar botón para ir para atras
+*Arreglar contenedor de preguntas, se salen de la pantalla
+*Hacer responsive
+*Agregar imagenes de los materiales del interior
+*Arreglar tamaño imagen final (la del plano)
+*Arreglar padding del boton de me gusta
