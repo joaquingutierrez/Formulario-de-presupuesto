@@ -10,7 +10,7 @@
 body {
     background-color: #23282d;
     font-family: "Montserrat", sans-serif;
-    margin: 0;
+    margin: 10px;
     padding: 0;
     height: 100vh;
     color: #fff;
@@ -131,6 +131,7 @@ h2 {
     margin: 0;
 }
 #goBackButton {
+    justify-self: flex-end;
     align-self: flex-end;
     margin: 10px;
 }
@@ -171,5 +172,11 @@ h2 {
     .infoContainer {
         width: 100%;
         margin: 10px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 448px) {
+    .choiceContainer img {
+        width: 280px;
     }
 }
