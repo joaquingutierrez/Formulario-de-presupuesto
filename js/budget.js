@@ -565,7 +565,7 @@ const renderUserElections = () => {
     <div><h3>Total: $${total}</h3></div>
     <h4 id="pdfButton">Descargar PDF</h4>
     </div>
-    <img src="./img/plano/${user_selected_opcions.houseVariant}.jpg">
+    <img class="plano_de_la_casa" src="./img/plano/${user_selected_opcions.houseVariant}.jpg">
 `
     const pdfButton = document.getElementById("pdfButton")
     pdfButton.addEventListener("click", () => downloadPDF(user_selected_opcions, total))

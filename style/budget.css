@@ -14,13 +14,15 @@ body {
     padding: 0;
     height: 100vh;
     color: #fff;
+    display: flex;
+    align-items: center;
 }
 
 #budgetContainer {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 100%;
+    margin: auto;
 }
 
 .landing {
@@ -70,18 +72,22 @@ h2 {
     flex-direction: column;
     animation: transicionar 0.4s ease-in-out;
 }
+.question h2 {
+    margin: 10px;
+}
 
 .choiceContainer {
+    margin: 20px 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    gap: 15px;
 }
 
 .choiceContainer div, #pdfButton {
     width: fit-content;
     padding: 15px 10px;
-    margin: 50px;
     background-color: #C82514;
     border-radius: 5px;
     cursor: pointer;
@@ -94,19 +100,37 @@ h2 {
 .choiceContainer img {
     width: 400px;
 }
+@media (min-width: 320px) and (max-width: 768px) {
+    .choiceContainer img {
+        width: 320px;
+    }
+}
 
 .choiceContainer div:hover, #pdfButton:hover {
     background-color: #70180e;
 }
 
 .floor_wall_image {
-    width: 400px;
+    margin: 10px;
+    width: 55%;
+    border-radius: 2%;
 }
 .budgetContainer {
     animation: transicionar 0.4s ease-in-out;
 }
 .materialsContainter img {
-    width: 350px;
-    height: 320px;
+    max-width: 350px;
+    max-height: 320px;
     border-radius: 14%;
+}
+
+.plano_de_la_casa {
+    height: 80%;
+}
+
+#goForward, #goBack {
+    padding: 14px 21px;
+}
+#goForward p, #goBack p {
+    margin: 0;
 }
