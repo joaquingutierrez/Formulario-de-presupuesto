@@ -497,7 +497,6 @@ const renderHouseFacade = () => {
             renderHouseWall()
         })
     }
-    console.log(user_selected_opcions.houseModel)
 
     const goBackButton = document.getElementById("goBackButton")
     goBackButton.addEventListener("click", () => {
