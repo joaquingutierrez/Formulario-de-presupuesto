@@ -97,7 +97,7 @@ const renderTypeofHouse = () => {
     <div id="typePampa"><img src="./img/facade/pm3a_chapa_negra_madera.jpg"><p>Pampa</p></div>
     </div>
     </div>
-    <div class="goBackButton"><p>Atras</p></div>
+    <div id="goBackButton"><p>Atras</p></div>
     `
     const typeNorden = document.getElementById("typeNorden")
     const typePampa = document.getElementById("typePampa")
@@ -109,6 +109,11 @@ const renderTypeofHouse = () => {
     typePampa.addEventListener("click", () => {
         user_selected_opcions = { ...user_selected_opcions, typeofHouse: "Pampa" }
         renderTypeofPampa()
+    })
+
+    const goBackButton = document.getElementById("goBackButton")
+    goBackButton.addEventListener("click", () => {
+        window.location.reload()
     })
 }
 /* Norden */
@@ -122,7 +127,7 @@ const renderTypeofNorden = () => {
     <div id="nm3"><img src="./img/facade/nm3a_chapa_negra_madera.jpg"><p>Modelo 3</p></div>
     </div>
     </div>
-    <div class="goBackButton"><p>Atras</p></div>
+    <div id="goBackButton"><p>Atras</p></div>
     `
     const nm1 = document.getElementById("nm1")
     const nm2 = document.getElementById("nm2")
@@ -139,6 +144,11 @@ const renderTypeofNorden = () => {
         user_selected_opcions = { ...user_selected_opcions, houseModel: "nm3" }
         renderVariantOfnm3()
     })
+
+    const goBackButton = document.getElementById("goBackButton")
+    goBackButton.addEventListener("click", () => {
+        renderTypeofHouse()
+    })
 }
 
 /* Norden Modelo 1 */
@@ -153,7 +163,7 @@ const renderVariantOfnm1 = () => {
     <div id="nm1d"><img src="./img/facade/nm1d_madera.jpg"><p>Modelo 1D</p></div>
     </div>
     </div>
-    <div class="goBackButton"><p>Atras</p></div>
+    <div id="goBackButton"><p>Atras</p></div>
     `
     const nm1a = document.getElementById("nm1a")
     const nm1b = document.getElementById("nm1b")
@@ -175,6 +185,11 @@ const renderVariantOfnm1 = () => {
         user_selected_opcions = { ...user_selected_opcions, houseVariant: "nm1d", subTotal: [house_price.nm1d] }
         renderHouseFacade()
     })
+
+    const goBackButton = document.getElementById("goBackButton")
+    goBackButton.addEventListener("click", () => {
+        renderTypeofNorden()
+    })
 }
 /* Norden Modelo 2 */
 const renderVariantOfnm2 = () => {
@@ -186,7 +201,7 @@ const renderVariantOfnm2 = () => {
     <div id="nm2b"><img src="./img/facade/nm2b_chapa_negra_madera.jpg"><p>Modelo 2B</p></div>
     </div>
     </div>
-    <div class="goBackButton"><p>Atras</p></div>
+    <div id="goBackButton"><p>Atras</p></div>
     `
     const nm2a = document.getElementById("nm2a")
     const nm2b = document.getElementById("nm2b")
@@ -197,6 +212,11 @@ const renderVariantOfnm2 = () => {
     nm2b.addEventListener("click", () => {
         user_selected_opcions = { ...user_selected_opcions, houseVariant: "nm2b", subTotal: [house_price.nm2b] }
         renderHouseFacade()
+    })
+
+    const goBackButton = document.getElementById("goBackButton")
+    goBackButton.addEventListener("click", () => {
+        renderTypeofNorden()
     })
 }
 /* Norden Modelo 3 */
@@ -209,7 +229,7 @@ const renderVariantOfnm3 = () => {
     <div id="nm3b"><img src="./img/facade/nm3b_chapa_negra_madera.jpg"><p>Modelo 3B</p></div>
     </div>
     </div>
-    <div class="goBackButton"><p>Atras</p></div>
+    <div id="goBackButton"><p>Atras</p></div>
     `
     const nm3a = document.getElementById("nm3a")
     const nm3b = document.getElementById("nm3b")
@@ -220,6 +240,11 @@ const renderVariantOfnm3 = () => {
     nm3b.addEventListener("click", () => {
         user_selected_opcions = { ...user_selected_opcions, houseVariant: "nm3b", subTotal: [house_price.nm3b] }
         renderHouseFacade()
+    })
+
+    const goBackButton = document.getElementById("goBackButton")
+    goBackButton.addEventListener("click", () => {
+        renderTypeofNorden()
     })
 }
 
@@ -234,7 +259,7 @@ const renderTypeofPampa = () => {
     <div id="pm3"><img src="./img/facade/pm3a_chapa_negra_madera.jpg"><p>Modelo 3</p></div>
     </div>
     </div>
-    <div class="goBackButton"><p>Atras</p></div>
+    <div id="goBackButton"><p>Atras</p></div>
     `
     const pm1 = document.getElementById("pm1")
     const pm2 = document.getElementById("pm2")
@@ -251,6 +276,11 @@ const renderTypeofPampa = () => {
         user_selected_opcions = { ...user_selected_opcions, modelHouse: "pm3" }
         renderVariantOfpm3()
     })
+
+    const goBackButton = document.getElementById("goBackButton")
+    goBackButton.addEventListener("click", () => {
+        renderTypeofHouse()
+    })
 }
 
 /* Pampa Modelo 1 */
@@ -265,7 +295,7 @@ const renderVariantOfpm1 = () => {
     <div id="pm1d"><img src="./img/facade/pm1d_madera.jpg"><p>Modelo 1D</p></div>
     </div>
     </div>
-    <div class="goBackButton"><p>Atras</p></div>
+    <div id="goBackButton"><p>Atras</p></div>
     `
     const pm1a = document.getElementById("pm1a")
     const pm1b = document.getElementById("pm1b")
@@ -287,6 +317,11 @@ const renderVariantOfpm1 = () => {
         user_selected_opcions = { ...user_selected_opcions, houseVariant: "pm1d", subTotal: [house_price.pm1d] }
         renderHouseFacade()
     })
+
+    const goBackButton = document.getElementById("goBackButton")
+    goBackButton.addEventListener("click", () => {
+        renderTypeofPampa()
+    })
 }
 /* Pampa Modelo 2 */
 const renderVariantOfpm2 = () => {
@@ -299,7 +334,7 @@ const renderVariantOfpm2 = () => {
     <div id="pm2c"><img src="./img/facade/pm2c_chapa_negra_madera.jpg"><p>Modelo 2C</p></div>
     </div>
     </div>
-    <div class="goBackButton"><p>Atras</p></div>
+    <div id="goBackButton"><p>Atras</p></div>
     `
     const pm2a = document.getElementById("pm2a")
     const pm2b = document.getElementById("pm2b")
@@ -316,6 +351,11 @@ const renderVariantOfpm2 = () => {
         user_selected_opcions = { ...user_selected_opcions, houseVariant: "pm2c", subTotal: [house_price.pm2c] }
         renderHouseFacade()
     })
+
+    const goBackButton = document.getElementById("goBackButton")
+    goBackButton.addEventListener("click", () => {
+        renderTypeofPampa()
+    })
 }
 /* Pampa Modelo 3 */
 const renderVariantOfpm3 = () => {
@@ -326,12 +366,17 @@ const renderVariantOfpm3 = () => {
     <div id="pm3a"><img src="./img/facade/pm3a_chapa_negra_madera.jpg"><p>Modelo 3A</p></div>
     </div>
     </div>
-    <div class="goBackButton"><p>Atras</p></div>
+    <div id="goBackButton"><p>Atras</p></div>
     `
     const pm3a = document.getElementById("pm3a")
     pm3a.addEventListener("click", () => {
         user_selected_opcions = { ...user_selected_opcions, houseVariant: "pm3a", subTotal: [house_price.pm3a] }
         renderHouseFacade()
+    })
+
+    const goBackButton = document.getElementById("goBackButton")
+    goBackButton.addEventListener("click", () => {
+        renderTypeofPampa()
     })
 }
 
@@ -348,7 +393,7 @@ const renderHouseFacade = () => {
         <div id="wood"><img src="./img/facade/${houseVariant}_madera.jpg"><p>Madera</p></div>
         </div>
         </div>
-        <div class="goBackButton"><p>Atras</p></div>
+        <div id="goBackButton"><p>Atras</p></div>
         `
         const chapaBlanca = document.getElementById("chapaBlanca")
         const chapaNegra = document.getElementById("chapaNegra")
@@ -379,7 +424,7 @@ const renderHouseFacade = () => {
         <div id="chapaNegraYMadera"><img src="./img/facade/${houseVariant}_chapa_negra_madera.jpg"><p>Chapa Negra y Madera</p></div>
         </div>
         </div>
-        <div class="goBackButton"><p>Atras</p></div>
+        <div id="goBackButton"><p>Atras</p></div>
         `
         const chapaBlanca = document.getElementById("chapaBlanca")
         const chapaNegra = document.getElementById("chapaNegra")
@@ -414,7 +459,7 @@ const renderHouseFacade = () => {
         <div id="chapaNegra"><img src="./img/facade/${houseVariant}_chapa_negra.jpg"><p>Chapa Negra</p></div>
         </div>
         </div>
-        <div class="goBackButton"><p>Atras</p></div>
+        <div id="goBackButton"><p>Atras</p></div>
     `
         const chapaBlanca = document.getElementById("chapaBlanca")
         const chapaNegra = document.getElementById("chapaNegra")
@@ -437,7 +482,7 @@ const renderHouseFacade = () => {
         <div id="chapaNegraYMadera"><img src="./img/facade/${houseVariant}_chapa_negra_madera.jpg"><p>Chapa Negra y Madera</p></div>
         </div>
         </div>
-        <div class="goBackButton"><p>Atras</p></div>
+        <div id="goBackButton"><p>Atras</p></div>
         `
         const chapaBlancaYMadera = document.getElementById("chapaBlancaYMadera")
         const chapaNegraYMadera = document.getElementById("chapaNegraYMadera")
@@ -452,6 +497,34 @@ const renderHouseFacade = () => {
             renderHouseWall()
         })
     }
+
+    const goBackButton = document.getElementById("goBackButton")
+    goBackButton.addEventListener("click", () => {
+        const houseModel = user_selected_opcions.houseModel
+        switch (houseModel) {
+            case "nm1":
+                renderVariantOfnm1()
+                break
+            case "nm2":
+                renderVariantOfnm2()
+                break
+            case "nm3":
+                renderVariantOfnm3()
+                break
+            case "pm1":
+                renderVariantOfpm1()
+                break
+            case "pm2":
+                renderVariantOfpm2()
+                break
+            case "pm3":
+                renderVariantOfpm3()
+                break
+            default:
+                window.location.reload()
+                break
+        }
+    })
 }
 
 /* Eleccion de las paredes */
@@ -465,7 +538,7 @@ const renderHouseWall = () => {
     <div id="wall_wood" class="materialsContainter"><img src="./img/materials/melamina_madera.jpg"><p>Melamina simil madera</p></div>
     </div>
     </div>
-    <div class="goBackButton"><p>Atras</p></div>
+    <div id="goBackButton"><p>Atras</p></div>
 `
     const wall_white = document.getElementById("wall_white")
     const wall_wood = document.getElementById("wall_wood")
@@ -479,6 +552,11 @@ const renderHouseWall = () => {
         user_selected_opcions.subTotal[2] = ceiling_wood[houseVariant]
         renderHouseFloor()
     })
+
+    const goBackButton = document.getElementById("goBackButton")
+    goBackButton.addEventListener("click", () => {
+        renderHouseFacade()
+    })
 }
 /* Eleccion del piso */
 const renderHouseFloor = () => {
@@ -491,7 +569,7 @@ const renderHouseFloor = () => {
     <div id="floor_wood" class="materialsContainter"><img src="./img/materials/porcellanato_madera.jpg"><p>Porcellanato simil madera</p></div>
     </div>
     </div>
-    <div class="goBackButton"><p>Atras</p></div>
+    <div id="goBackButton"><p>Atras</p></div>
 `
     const gray = document.getElementById("floor_gray")
     const wood = document.getElementById("floor_wood")
@@ -504,6 +582,11 @@ const renderHouseFloor = () => {
         user_selected_opcions.houseFloor = "Porcellanato simil madera"
         user_selected_opcions.subTotal[3] = floor_wood[houseVariant]
         renderHouseWallAndFloorConfirmation()
+    })
+
+    const goBackButton = document.getElementById("goBackButton")
+    goBackButton.addEventListener("click", () => {
+        renderHouseWall()
     })
 }
 
@@ -551,7 +634,7 @@ const renderHouseWallAndFloorConfirmation = () => {
     <div id="goBack"><p>Volver a elegir las paredes y el piso</p></div>
     </div>
     </div>
-    <div class="goBackButton"><p>Atras</p></div>
+    <div id="goBackButton"><p>Atras</p></div>
         `
     const goForward = document.getElementById("goForward")
     const goBack = document.getElementById("goBack")
@@ -560,6 +643,11 @@ const renderHouseWallAndFloorConfirmation = () => {
     })
     goBack.addEventListener("click", () => {
         renderHouseWall()
+    })
+
+    const goBackButton = document.getElementById("goBackButton")
+    goBackButton.addEventListener("click", () => {
+        renderHouseFloor()
     })
 }
 
@@ -582,10 +670,15 @@ const renderUserElections = () => {
     <h4 id="pdfButton">Descargar PDF</h4>
     </div>
     <img class="plano_de_la_casa" src="./img/plano/${user_selected_opcions.houseVariant}.jpg">
-    <div class="goBackButton"><p>Atras</p></div>
+    <div id="goBackButton"><p>Atras</p></div>
 `
     const pdfButton = document.getElementById("pdfButton")
     pdfButton.addEventListener("click", () => downloadPDF(user_selected_opcions, total))
+
+    const goBackButton = document.getElementById("goBackButton")
+    goBackButton.addEventListener("click", () => {
+        renderHouseWallAndFloorConfirmation()
+    })
 }
 
 

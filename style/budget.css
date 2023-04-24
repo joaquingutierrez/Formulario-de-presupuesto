@@ -85,7 +85,7 @@ h2 {
     gap: 15px;
 }
 
-.choiceContainer div, #pdfButton, .goBackButton {
+.choiceContainer div, #pdfButton, #goBackButton {
     width: fit-content;
     padding: 15px 10px;
     background-color: #C82514;
@@ -101,7 +101,7 @@ h2 {
     width: 400px;
 }
 
-.choiceContainer div:hover, #pdfButton:hover, .goBackButton:hover {
+.choiceContainer div:hover, #pdfButton:hover, #goBackButton:hover {
     background-color: #70180e;
 }
 
@@ -123,13 +123,13 @@ h2 {
     width: 60%;
 }
 
-#goForward, #goBack, .goBackButton {
+#goForward, #goBack, #goBackButton {
     padding: 14px 21px;
 }
-#goForward p, #goBack p, .goBackButton p {
+#goForward p, #goBack p, #goBackButton p {
     margin: 0;
 }
-.goBackButton {
+#goBackButton {
     position: absolute;
     bottom: 30px;
     right: 30px;
