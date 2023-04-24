@@ -100,11 +100,6 @@ h2 {
 .choiceContainer img {
     width: 400px;
 }
-@media (min-width: 320px) and (max-width: 768px) {
-    .choiceContainer img {
-        width: 320px;
-    }
-}
 
 .choiceContainer div:hover, #pdfButton:hover {
     background-color: #70180e;
@@ -125,7 +120,7 @@ h2 {
 }
 
 .plano_de_la_casa {
-    height: 80%;
+    width: 60%;
 }
 
 #goForward, #goBack {
@@ -133,4 +128,56 @@ h2 {
 }
 #goForward p, #goBack p {
     margin: 0;
+}
+
+/* @media (min-width: 426px) and (max-width: 768px) {
+    #budgetContainer {
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .choiceContainer img {
+        width: 320px;
+    }
+    .plano_de_la_casa {
+        margin-left: auto;
+        margin-right: auto;
+    }
+} */
+@media (min-width: 320px) and (max-width: 768px) {
+    #budgetContainer {
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .choiceContainer img {
+        width: 300px;
+    }
+    .floor_wall_image {
+        width: 95%;
+    }
+    .question h2 {
+        text-align: center;
+    }
+    .landing {
+        width: 100%;
+    }
+    .frontImg {
+        width: 85%;
+        margin: auto;
+    }
+    .inputName button {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .plano_de_la_casa {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    #pdfButton {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .infoContainer {
+        width: 100%;
+    }
 }

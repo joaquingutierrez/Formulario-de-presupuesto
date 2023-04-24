@@ -555,7 +555,7 @@ const renderUserElections = () => {
     })
     const total = acum
     budgetContainer.innerHTML = `
-    <div>
+    <div class="infoContainer">
     <h2>${user_selected_opcions.user_name}, ¡Aquí puedes ver tu presupuesto!</h2>
     <div><h3>Tipo de casa: ${user_selected_opcions.typeofHouse}</h3></div>
     <div><h3>Modelo de casa: ${user_selected_opcions.houseVariant}</h3></div>
