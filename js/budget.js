@@ -341,7 +341,7 @@ const renderVariantOfpm2 = () => {
     <div class="choiceContainer">
     <div id="pm2a"><img src="./img/facade/pm2a_chapa_negra.jpg"><p>Modelo 2A <br> (US$ ${house_price.pm2a})</p></div>
     <div id="pm2b"><img src="./img/facade/pm2b_chapa_negra.jpg"><p>Modelo 2B <br> (US$ ${house_price.pm2b})</p></div>
-    <div id="pm2c"><img src="./img/facade/pm2c_chapa_negra_madera.jpg"><p>Modelo 2C</p></div>
+    <div id="pm2c"><img src="./img/facade/pm2c_chapa_negra_madera.jpg"><p>Modelo 2C <br> (US$ ${house_price.pm2c})</p></div>
     </div>
     <div id="goBackButton"><p>Atras</p></div>
     </div>
