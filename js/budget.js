@@ -507,21 +507,27 @@ const renderHouseFacade = () => {
         const houseModel = user_selected_opcions.houseModel
         switch (houseModel) {
             case "nm1":
+                user_selected_opcions.subTotal[0] = 0
                 renderVariantOfnm1()
                 break
             case "nm2":
+                user_selected_opcions.subTotal[0] = 0
                 renderVariantOfnm2()
                 break
             case "nm3":
+                user_selected_opcions.subTotal[0] = 0
                 renderVariantOfnm3()
                 break
             case "pm1":
+                user_selected_opcions.subTotal[0] = 0
                 renderVariantOfpm1()
                 break
             case "pm2":
+                user_selected_opcions.subTotal[0] = 0
                 renderVariantOfpm2()
                 break
             case "pm3":
+                user_selected_opcions.subTotal[0] = 0
                 renderVariantOfpm3()
                 break
             default:
@@ -560,6 +566,7 @@ const renderHouseWall = () => {
 
     const goBackButton = document.getElementById("goBackButton")
     goBackButton.addEventListener("click", () => {
+        user_selected_opcions.subTotal[1] = 0
         renderHouseFacade()
     })
 }
@@ -592,6 +599,7 @@ const renderHouseFloor = () => {
 
     const goBackButton = document.getElementById("goBackButton")
     goBackButton.addEventListener("click", () => {
+        user_selected_opcions.subTotal[2] = 0
         renderHouseWall()
     })
 }
@@ -654,6 +662,7 @@ const renderHouseWallAndFloorConfirmation = () => {
 
     const goBackButton = document.getElementById("goBackButton")
     goBackButton.addEventListener("click", () => {
+        user_selected_opcions.subTotal[3] = 0
         renderHouseFloor()
     })
 }
