@@ -387,6 +387,7 @@ const renderHouseFacade = () => {
         budgetContainer.innerHTML = `
         <div class="question">
         <h2>¿Qué fachada desea?</h2>
+        <h3>Subtotal: US$ ${totalCal()}</h3>
         <div class="choiceContainer">
         <div id="chapaBlanca"><img src="./img/facade/${houseVariant}_chapa_blanca.jpg"><p>Chapa Blanca <br> (US$ 0)</p></div>
         <div id="chapaNegra"><img src="./img/facade/${houseVariant}_chapa_negra.jpg"><p>Chapa Negra <br> (US$ 0)</p></div>
@@ -417,6 +418,7 @@ const renderHouseFacade = () => {
         budgetContainer.innerHTML = `
         <div class="question">
         <h2>¿Qué fachada desea?</h2>
+        <h3>Subtotal: US$ ${totalCal()}</h3>
         <div class="choiceContainer">
         <div id="chapaBlanca"><img src="./img/facade/${houseVariant}_chapa_blanca.jpg"><p>Chapa Blanca <br> (US$ 0)</p></div>
         <div id="chapaNegra"><img src="./img/facade/${houseVariant}_chapa_negra.jpg"><p>Chapa Negra <br> (US$ 0)</p></div>
@@ -454,6 +456,7 @@ const renderHouseFacade = () => {
         budgetContainer.innerHTML = `
         <div class="question">
         <h2>¿Qué fachada desea?</h2>
+        <h3>Subtotal: US$ ${totalCal()}</h3>
         <div class="choiceContainer">
         <div id="chapaBlanca"><img src="./img/facade/${houseVariant}_chapa_blanca.jpg"><p>Chapa Blanca <br> (US$ 0)</p></div>
         <div id="chapaNegra"><img src="./img/facade/${houseVariant}_chapa_negra.jpg"><p>Chapa Negra <br> (US$ 0)</p></div>
@@ -477,6 +480,7 @@ const renderHouseFacade = () => {
         budgetContainer.innerHTML = `
         <div class="question">
         <h2>¿Qué fachada desea?</h2>
+        <h3>Subtotal: US$ ${totalCal()}</h3>
         <div class="choiceContainer">
         <div id="chapaBlancaYMadera"><img src="./img/facade/${houseVariant}_chapa_blanca_madera.jpg"><p>Chapa Blanca y Madera <br> (US$ ${facade_wood[houseVariant]})</p></div>
         <div id="chapaNegraYMadera"><img src="./img/facade/${houseVariant}_chapa_negra_madera.jpg"><p>Chapa Negra y Madera <br> (US$ ${facade_wood[houseVariant]})</p></div>
@@ -533,6 +537,7 @@ const renderHouseWall = () => {
     budgetContainer.innerHTML = `
     <div class="question">
     <h2>¿Qué paredes desea?</h2>
+    <h3>Subtotal: US$ ${totalCal()}</h3>
     <div class="choiceContainer">
     <div id="wall_white" class="materialsContainter"><img src="./img/materials/latex_blanco.jpg"><p>Pintura latex interior <br> (US$ 0)</p></div>
     <div id="wall_wood" class="materialsContainter"><img src="./img/materials/melamina_madera.jpg"><p>Melamina simil madera <br> (US$ ${ceiling_wood[houseVariant]})</p></div>
@@ -564,6 +569,7 @@ const renderHouseFloor = () => {
     budgetContainer.innerHTML = `
     <div class="question">
     <h2>¿Qué piso desea?</h2>
+    <h3>Subtotal: US$ ${totalCal()}</h3>
     <div class="choiceContainer">
     <div id="floor_gray" class="materialsContainter"><img src="./img/materials/porcellanato_gris.jpg"><p>Porcellanato gris neutro <br> (US$ 0)</p></div>
     <div id="floor_wood" class="materialsContainter"><img src="./img/materials/porcellanato_madera.jpg"><p>Porcellanato simil madera <br> (US$ ${floor_wood[houseVariant]})</p></div>
@@ -628,6 +634,7 @@ const renderHouseWallAndFloorConfirmation = () => {
     budgetContainer.innerHTML = `
     <div class="question">
     <h2>¡Así se ve su elección! ¿Desea continuar?</h2>
+    <h3>Subtotal: US$ ${totalCal()}</h3>
     <img class="floor_wall_image" src="./img/floor_wall/${modelSelection}/${imgName}">
     <div class="choiceContainer">
     <div id="goForward"><p>Me gusta</p></div>
@@ -653,11 +660,7 @@ const renderHouseWallAndFloorConfirmation = () => {
 
 /* Slide con todas las eleciones */
 const renderUserElections = () => {
-    let acum = 0
-    user_selected_opcions.subTotal.map((item) => {
-        acum += item
-    })
-    const total = acum
+    const total = totalCal()
     budgetContainer.innerHTML = `
     <div class="infoContainer">
     <h2>${user_selected_opcions.user_name}, ¡Aquí puedes ver tu presupuesto!</h2>
@@ -679,6 +682,15 @@ const renderUserElections = () => {
     goBackButton.addEventListener("click", () => {
         renderHouseWallAndFloorConfirmation()
     })
+}
+
+/* Funcion para calcular el total */
+const totalCal = () => {
+    let acum = 0
+    user_selected_opcions.subTotal.map((item) => {
+        acum += item
+    })
+    return total = acum
 }
 
 
