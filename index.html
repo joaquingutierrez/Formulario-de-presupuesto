@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="./style/budget.css">
     <title>Formulario para Presupuesto</title>
 </head>
+
 <body>
     <main id="budgetContainer">
         <div class="landing">
@@ -14,13 +16,26 @@
             <h2>¿Cuál es su nombre?</h2>
             <div class="inputName">
                 <input type="text" placeholder="Nombre..." id="user_name">
+                <input type="email" placeholder="Correo electrónico..." id="user_email">
                 <button id="user_name_button">Siguiente</button>
             </div>
         </div>
         <img class="frontImg" src="./img/facade/pm3a_chapa_negra_madera.jpg" alt="">
     </main>
-
+    <!-- descargar pdf -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js"></script>
+    <!-- mi js -->
     <script src="./js/budget.js"></script>
+    <!-- emailjs -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("JLgKNXnpYxSF0JKrP");
+        })();
+    </script>
+    <!-- sweet alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
+
 </html>

@@ -81,11 +81,21 @@ const facade_wood = {
 
 let user_selected_opcions = {}
 
-/* funcion para tomar el nombre de la persona*/
+/* funcion para tomar el nombre de la persona y el email*/
 user_name_button.addEventListener("click", () => {
     const user_name = document.getElementById("user_name").value
-    user_selected_opcions = { ...user_selected_opcions, user_name }
-    renderTypeofHouse()
+    const user_email = document.getElementById("user_email").value
+    if (user_name === "" || user_email === "") {
+        Swal.fire({
+            icon: 'error',
+            title: 'Algo salió mal',
+            text: 'Por favor, complete todos los campos!',
+        })
+    } else {
+        user_selected_opcions = { ...user_selected_opcions, user_name }
+        user_selected_opcions = { ...user_selected_opcions, user_email }
+        renderTypeofHouse()
+    }
 })
 
 const renderTypeofHouse = () => {
@@ -657,6 +667,8 @@ const renderHouseWallAndFloorConfirmation = () => {
         renderUserElections()
     })
     goBack.addEventListener("click", () => {
+        user_selected_opcions.subTotal[2] = 0
+        user_selected_opcions.subTotal[3] = 0
         renderHouseWall()
     })
 
@@ -691,6 +703,8 @@ const renderUserElections = () => {
     goBackButton.addEventListener("click", () => {
         renderHouseWallAndFloorConfirmation()
     })
+
+    sendEmail()
 }
 
 /* Funcion para calcular el total */
@@ -721,4 +735,21 @@ const downloadPDF = (user_selected_opcions, total) => {
     image1.src = `./img/plano/${user_selected_opcions.houseVariant}.jpg`; /// URL de la imagen
     doc.addImage(image1, 'jpg', 25, 75, 170, 180); // Agregar la imagen al PDF (X, Y, Width, Height)
     doc.save("Presupuesto.pdf");
+}
+
+const sendEmail = () => {
+    const body = `
+        Tipo de casa: ${user_selected_opcions.typeofHouse}
+        Modelo de casa: ${user_selected_opcions.houseVariant}
+        Fachada: ${user_selected_opcions.houseFacade}
+        Paredes: ${user_selected_opcions.houseWall}
+        Piso: ${user_selected_opcions.houseFloor}
+        Total: $${totalCal()}
+    `
+    const templateParams = {
+        from_name: user_selected_opcions.user_name,
+        from_email: user_selected_opcions.user_email,
+        message: body
+    }
+    emailjs.send("service_yhu5xkv", "template_rvhhiu3", templateParams);
 }
