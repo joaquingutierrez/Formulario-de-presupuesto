@@ -157,10 +157,10 @@ const renderVariantOfnm1 = () => {
     <div class="question">
     <h2>¿Qué variante desea?</h2>
     <div class="choiceContainer">
-    <div id="nm1a"><img src="./img/facade/nm1a_madera.jpg"><p>Modelo 1A</p></div>
-    <div id="nm1b"><img src="./img/facade/nm1b_madera.jpg"><p>Modelo 1B</p></div>
-    <div id="nm1c"><img src="./img/facade/nm1c_madera.jpg"><p>Modelo 1C</p></div>
-    <div id="nm1d"><img src="./img/facade/nm1d_madera.jpg"><p>Modelo 1D</p></div>
+    <div id="nm1a"><img src="./img/facade/nm1a_madera.jpg"><p>Modelo 1A <br> (US$ ${house_price.nm1a})</p></div>
+    <div id="nm1b"><img src="./img/facade/nm1b_madera.jpg"><p>Modelo 1B <br> (US$ ${house_price.nm1b})</p></div>
+    <div id="nm1c"><img src="./img/facade/nm1c_madera.jpg"><p>Modelo 1C <br> (US$ ${house_price.nm1c})</p></div>
+    <div id="nm1d"><img src="./img/facade/nm1d_madera.jpg"><p>Modelo 1D <br> (US$ ${house_price.nm1d})</p></div>
     </div>
     <div id="goBackButton"><p>Atras</p></div>
     </div>
@@ -197,8 +197,8 @@ const renderVariantOfnm2 = () => {
     <div class="question">
     <h2>¿Qué variante desea?</h2>
     <div class="choiceContainer">
-    <div id="nm2a"><img src="./img/facade/nm2a_chapa_negra_madera.jpg"><p>Modelo 2A</p></div>
-    <div id="nm2b"><img src="./img/facade/nm2b_chapa_negra_madera.jpg"><p>Modelo 2B</p></div>
+    <div id="nm2a"><img src="./img/facade/nm2a_chapa_negra_madera.jpg"><p>Modelo 2A <br> (US$ ${house_price.nm2a})</p></div>
+    <div id="nm2b"><img src="./img/facade/nm2b_chapa_negra_madera.jpg"><p>Modelo 2B <br> (US$ ${house_price.nm2b})</p></div>
     </div>
     <div id="goBackButton"><p>Atras</p></div>
     </div>
@@ -225,8 +225,8 @@ const renderVariantOfnm3 = () => {
     <div class="question">
     <h2>¿Qué variante desea?</h2>
     <div class="choiceContainer">
-    <div id="nm3a"><img src="./img/facade/nm3a_chapa_negra_madera.jpg"><p>Modelo 3A</p></div>
-    <div id="nm3b"><img src="./img/facade/nm3b_chapa_negra_madera.jpg"><p>Modelo 3B</p></div>
+    <div id="nm3a"><img src="./img/facade/nm3a_chapa_negra_madera.jpg"><p>Modelo 3A <br> (US$ ${house_price.nm3a})</p></div>
+    <div id="nm3b"><img src="./img/facade/nm3b_chapa_negra_madera.jpg"><p>Modelo 3B <br> (US$ ${house_price.nm3b})</p></div>
     </div>
     <div id="goBackButton"><p>Atras</p></div>
     </div>
@@ -289,10 +289,10 @@ const renderVariantOfpm1 = () => {
     <div class="question">
     <h2>¿Qué variante desea?</h2>
     <div class="choiceContainer">
-    <div id="pm1a"><img src="./img/facade/pm1a_madera.jpg"><p>Modelo 1A</p></div>
-    <div id="pm1b"><img src="./img/facade/pm1b_madera.jpg"><p>Modelo 1B</p></div>
-    <div id="pm1c"><img src="./img/facade/pm1c_madera.jpg"><p>Modelo 1C</p></div>
-    <div id="pm1d"><img src="./img/facade/pm1d_madera.jpg"><p>Modelo 1D</p></div>
+    <div id="pm1a"><img src="./img/facade/pm1a_madera.jpg"><p>Modelo 1A <br> (US$ ${house_price.pm1a})</p></div>
+    <div id="pm1b"><img src="./img/facade/pm1b_madera.jpg"><p>Modelo 1B <br> (US$ ${house_price.pm1b})</p></div>
+    <div id="pm1c"><img src="./img/facade/pm1c_madera.jpg"><p>Modelo 1C <br> (US$ ${house_price.pm1c})</p></div>
+    <div id="pm1d"><img src="./img/facade/pm1d_madera.jpg"><p>Modelo 1D <br> (US$ ${house_price.pm1d})</p></div>
     </div>
     <div id="goBackButton"><p>Atras</p></div>
     </div>
@@ -329,8 +329,8 @@ const renderVariantOfpm2 = () => {
     <div class="question">
     <h2>¿Qué variante desea?</h2>
     <div class="choiceContainer">
-    <div id="pm2a"><img src="./img/facade/pm2a_chapa_negra.jpg"><p>Modelo 2A</p></div>
-    <div id="pm2b"><img src="./img/facade/pm2b_chapa_negra.jpg"><p>Modelo 2B</p></div>
+    <div id="pm2a"><img src="./img/facade/pm2a_chapa_negra.jpg"><p>Modelo 2A <br> (US$ ${house_price.pm2a})</p></div>
+    <div id="pm2b"><img src="./img/facade/pm2b_chapa_negra.jpg"><p>Modelo 2B <br> (US$ ${house_price.pm2b})</p></div>
     <div id="pm2c"><img src="./img/facade/pm2c_chapa_negra_madera.jpg"><p>Modelo 2C</p></div>
     </div>
     <div id="goBackButton"><p>Atras</p></div>
@@ -363,7 +363,7 @@ const renderVariantOfpm3 = () => {
     <div class="question">
     <h2>¿Qué variante desea?</h2>
     <div class="choiceContainer">
-    <div id="pm3a"><img src="./img/facade/pm3a_chapa_negra_madera.jpg"><p>Modelo 3A</p></div>
+    <div id="pm3a"><img src="./img/facade/pm3a_chapa_negra_madera.jpg"><p>Modelo 3A <br> (US$ ${house_price.pm3a})</p></div>
     </div>
     <div id="goBackButton"><p>Atras</p></div>
     </div>
@@ -388,9 +388,9 @@ const renderHouseFacade = () => {
         <div class="question">
         <h2>¿Qué fachada desea?</h2>
         <div class="choiceContainer">
-        <div id="chapaBlanca"><img src="./img/facade/${houseVariant}_chapa_blanca.jpg"><p>Chapa Blanca</p></div>
-        <div id="chapaNegra"><img src="./img/facade/${houseVariant}_chapa_negra.jpg"><p>Chapa Negra</p></div>
-        <div id="wood"><img src="./img/facade/${houseVariant}_madera.jpg"><p>Madera</p></div>
+        <div id="chapaBlanca"><img src="./img/facade/${houseVariant}_chapa_blanca.jpg"><p>Chapa Blanca <br> (US$ 0)</p></div>
+        <div id="chapaNegra"><img src="./img/facade/${houseVariant}_chapa_negra.jpg"><p>Chapa Negra <br> (US$ 0)</p></div>
+        <div id="wood"><img src="./img/facade/${houseVariant}_madera.jpg"><p>Madera <br> (US$ ${facade_wood[houseVariant]})</p></div>
         </div>
         <div id="goBackButton"><p>Atras</p></div>
         </div>
@@ -418,10 +418,10 @@ const renderHouseFacade = () => {
         <div class="question">
         <h2>¿Qué fachada desea?</h2>
         <div class="choiceContainer">
-        <div id="chapaBlanca"><img src="./img/facade/${houseVariant}_chapa_blanca.jpg"><p>Chapa Blanca</p></div>
-        <div id="chapaNegra"><img src="./img/facade/${houseVariant}_chapa_negra.jpg"><p>Chapa Negra</p></div>
-        <div id="chapaBlancaYMadera"><img src="./img/facade/${houseVariant}_chapa_blanca_madera.jpg"><p>Chapa Blanca y Madera</p></div>
-        <div id="chapaNegraYMadera"><img src="./img/facade/${houseVariant}_chapa_negra_madera.jpg"><p>Chapa Negra y Madera</p></div>
+        <div id="chapaBlanca"><img src="./img/facade/${houseVariant}_chapa_blanca.jpg"><p>Chapa Blanca <br> (US$ 0)</p></div>
+        <div id="chapaNegra"><img src="./img/facade/${houseVariant}_chapa_negra.jpg"><p>Chapa Negra <br> (US$ 0)</p></div>
+        <div id="chapaBlancaYMadera"><img src="./img/facade/${houseVariant}_chapa_blanca_madera.jpg"><p>Chapa Blanca y Madera <br> (US$ ${facade_wood[houseVariant]})</p></div>
+        <div id="chapaNegraYMadera"><img src="./img/facade/${houseVariant}_chapa_negra_madera.jpg"><p>Chapa Negra y Madera <br> (US$ ${facade_wood[houseVariant]})</p></div>
         </div>
         <div id="goBackButton"><p>Atras</p></div>
         </div>
@@ -455,8 +455,8 @@ const renderHouseFacade = () => {
         <div class="question">
         <h2>¿Qué fachada desea?</h2>
         <div class="choiceContainer">
-        <div id="chapaBlanca"><img src="./img/facade/${houseVariant}_chapa_blanca.jpg"><p>Chapa Blanca</p></div>
-        <div id="chapaNegra"><img src="./img/facade/${houseVariant}_chapa_negra.jpg"><p>Chapa Negra</p></div>
+        <div id="chapaBlanca"><img src="./img/facade/${houseVariant}_chapa_blanca.jpg"><p>Chapa Blanca <br> (US$ 0)</p></div>
+        <div id="chapaNegra"><img src="./img/facade/${houseVariant}_chapa_negra.jpg"><p>Chapa Negra <br> (US$ 0)</p></div>
         </div>
         <div id="goBackButton"><p>Atras</p></div>
         </div>
@@ -478,8 +478,8 @@ const renderHouseFacade = () => {
         <div class="question">
         <h2>¿Qué fachada desea?</h2>
         <div class="choiceContainer">
-        <div id="chapaBlancaYMadera"><img src="./img/facade/${houseVariant}_chapa_blanca_madera.jpg"><p>Chapa Blanca y Madera</p></div>
-        <div id="chapaNegraYMadera"><img src="./img/facade/${houseVariant}_chapa_negra_madera.jpg"><p>Chapa Negra y Madera</p></div>
+        <div id="chapaBlancaYMadera"><img src="./img/facade/${houseVariant}_chapa_blanca_madera.jpg"><p>Chapa Blanca y Madera <br> (US$ ${facade_wood[houseVariant]})</p></div>
+        <div id="chapaNegraYMadera"><img src="./img/facade/${houseVariant}_chapa_negra_madera.jpg"><p>Chapa Negra y Madera <br> (US$ ${facade_wood[houseVariant]})</p></div>
         </div>
         <div id="goBackButton"><p>Atras</p></div>
         </div>
@@ -534,8 +534,8 @@ const renderHouseWall = () => {
     <div class="question">
     <h2>¿Qué paredes desea?</h2>
     <div class="choiceContainer">
-    <div id="wall_white" class="materialsContainter"><img src="./img/materials/latex_blanco.jpg"><p>Pintura latex interior</p></div>
-    <div id="wall_wood" class="materialsContainter"><img src="./img/materials/melamina_madera.jpg"><p>Melamina simil madera</p></div>
+    <div id="wall_white" class="materialsContainter"><img src="./img/materials/latex_blanco.jpg"><p>Pintura latex interior <br> (US$ 0)</p></div>
+    <div id="wall_wood" class="materialsContainter"><img src="./img/materials/melamina_madera.jpg"><p>Melamina simil madera <br> (US$ ${ceiling_wood[houseVariant]})</p></div>
     </div>
     <div id="goBackButton"><p>Atras</p></div>
     </div>
@@ -565,8 +565,8 @@ const renderHouseFloor = () => {
     <div class="question">
     <h2>¿Qué piso desea?</h2>
     <div class="choiceContainer">
-    <div id="floor_gray" class="materialsContainter"><img src="./img/materials/porcellanato_gris.jpg"><p>Porcellanato gris neutro</p></div>
-    <div id="floor_wood" class="materialsContainter"><img src="./img/materials/porcellanato_madera.jpg"><p>Porcellanato simil madera</p></div>
+    <div id="floor_gray" class="materialsContainter"><img src="./img/materials/porcellanato_gris.jpg"><p>Porcellanato gris neutro <br> (US$ 0)</p></div>
+    <div id="floor_wood" class="materialsContainter"><img src="./img/materials/porcellanato_madera.jpg"><p>Porcellanato simil madera <br> (US$ ${floor_wood[houseVariant]})</p></div>
     </div>
     <div id="goBackButton"><p>Atras</p></div>
     </div>
