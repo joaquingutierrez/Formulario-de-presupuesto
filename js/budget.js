@@ -736,20 +736,3 @@ const downloadPDF = (user_selected_opcions, total) => {
     doc.addImage(image1, 'jpg', 25, 75, 170, 180); // Agregar la imagen al PDF (X, Y, Width, Height)
     doc.save("Presupuesto.pdf");
 }
-
-const sendEmail = () => {
-    const body = `
-        Tipo de casa: ${user_selected_opcions.typeofHouse}
-        Modelo de casa: ${user_selected_opcions.houseVariant}
-        Fachada: ${user_selected_opcions.houseFacade}
-        Paredes: ${user_selected_opcions.houseWall}
-        Piso: ${user_selected_opcions.houseFloor}
-        Total: $${totalCal()}
-    `
-    const templateParams = {
-        from_name: user_selected_opcions.user_name,
-        from_email: user_selected_opcions.user_email,
-        message: body
-    }
-    emailjs.send("service_yhu5xkv", "template_rvhhiu3", templateParams);
-}
